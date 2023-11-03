@@ -1,0 +1,87 @@
+{
+    "Daniel": {
+      "bio": "Hi my name is Daniel. I go to UIC and I love all types of foods. Since I love spricy food and dont have any dietary restriction I can eat anything!",
+      "picture": "filepath",
+      "recipes": {
+        "names": [
+          "Cilantro Lime Rice",
+          "Tonkotsu Ramen"
+        ],
+        "imgs": [
+          "filepath1",
+          "filepath2"
+        ]
+      },
+      "recommendations": {
+        "names": [
+          "Hot Dog",
+          "Taro Milk Tea",
+          "Butter Chicken"
+        ],
+        "resturaunts": [
+          "Portillos",
+          "Tai Chi",
+          "Curry on Fire"
+        ],
+        "imgs": [
+          "filepath1",
+          "filepath2",
+          "filepath3"
+        ]
+      }
+    },
+    "Drew": {
+      "bio": "Hey its Drew! I'm a college student who usually orders food while studying. I try to find cheap vegetarian food since I'm vegetarian.",
+      "picture": "filepath",
+      "recipes": {
+        "names": [
+          "Miso Soup",
+          "Veggie Tacos"
+        ],
+        "imgs": [
+          "filepath1",
+          "filepath2"
+        ]
+      },
+      "recommendations": {
+        "names": [
+          "Panang Curry"
+        ],
+        "resturaunts": [
+          "Oppart Thai"
+        ],
+        "imgs": [
+          "filepath1"
+        ]
+      }
+    },
+    "Teressa": {
+      "bio": "Hello, I'm Teressa! I really like to go out and get food with friends. I'm always looking for big portions at a low price so me and my friends can split everything!",
+      "picture": "filepath",
+      "recipes": {
+        "names": [],
+        "imgs": []
+      },
+      "recommendations": {
+        "names": [
+          "Fried Rice",
+          "Blockbuster Sub",
+          "Pad Thai",
+          "Veggie Burrito"
+        ],
+        "resturaunts": [
+          "Oppart Thai",
+          "Fontanos",
+          "Golden Thai",
+          "Chilangos"
+        ],
+        "imgs": [
+          "filepath1",
+          "filepath2",
+          "filepath3",
+          "filepath4",
+          ""
+        ]
+      }
+    }
+  }
