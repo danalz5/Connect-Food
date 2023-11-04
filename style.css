@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+#Options {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 1000px;
+}
+
+#Options button {
+    height: 500px;
+    width: 300px;
+}
+
+h1 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
