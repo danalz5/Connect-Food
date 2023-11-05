@@ -28,6 +28,7 @@
       "portionSize": 2,
       "price": 16.95,
       "restaurant": "Lalo's on Maxwell",
-      "description": "Filles with onions, mushrooms, tomatoes, and poblano peppers."
+      "description": "Filles with onions, mushrooms, tomatoes, and poblano peppers.",
+      "dietary": "Vegetarian"
     }
   }
