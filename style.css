@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+body {
+    background: lightblue;
+}
+
 #Options {
     display: flex;
     justify-content: space-between;
@@ -16,4 +20,10 @@ h1 {
     text-align: center;
     display: flex;
     justify-content: center;
+    font: "Pacifico"
+}
+
+button {
+    background-color: antiquewhite;
+
 }
