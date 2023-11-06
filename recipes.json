@@ -1,14 +1,23 @@
 {
   "Sour-Cream Lemon Pie": {
-    "description": "",
-    "steps": ""
+    "Description": "The combination of lemon and sour cream give this pie a smooth texture and tangy taste.  Just perfect with the graham cracker crust.",
+    "Equipment": "Equipment\nPie Plate (9in)\nMeasuring Cups\nMeasuring Spoons",
+    "Ingredients": "Pie Filling\n1 cup Sugar\n3 Tbsp cornstarch plus 1-1/2 tsp\n1 Tbsp grated lemon peel\n1/2 cup lemon juice\n3 egg yolks lightly beaten\n1 cup milk\n1/4 cup butter cubed\n8 oz sour cream\n1 cup heavy whipping cream whipped\n* Lemon twists for garnish\nGraham Cracker Crust\n1 1/4 cup graham cracker crumbs\n5 Tbsp butter melted\n2 Tbsp sugar\n",
+    "Steps": "Pie Filling\nCombine sugar, cornstarch, lemon peel, juice, egg yolks and milk in heavy saucepan\nCook over medium heat until thickened. Stir in butter\nCool mixture to room temperature and add in sour cream\nPour into Graham Cracker Crust\nTop with Whipped Cream and garnish as desired.\nRefrigerate until ready to serve\nGraham cracker crust\nMix together graham cracker crumbs, melted butter and sugar with a fork\nPour the crumbs into a pie plate\nUse your measuring cup to press crumbs into bottom and sides of pie plate\nBake at 325 until the crust begins to brown - about 15-20 minutes\nAllow to cool and keep stored in refrigeator\nNotes\nIf you prefer, you can use a pastry crust instead of a graham cracker crust. Use my recipe for the perfect pie crust found here.\nIf using a graham cracker curst, use your measuring cup to press the crumbs into the bottom and sides of the pie pan to get a nice smooth, even crust!",
+    "Nutrition": "Calories: 523kcal | Carbohydrates: 47g | Protein: 4g | Fat: 35g | Saturated Fat: 20g | Cholesterol: 166mg | Sodium: 266mg | Potassium: 148mg | Sugar: 33g | Vitamin A: 1160IU | Vitamin C: 7.3mg | Calcium: 108mg | Iron: 0.9mg"
   },
   "Orange Chicken": {
-    "description": "",
-    "steps": ""
+    "Description": "Delicious orange chicken, just like the dish served at your favorite take out restaurant.\n",
+    "Equipment": "Juicer\nMicroplane\nMeasuring Cups",
+    "Ingredients": "Chicken\n2 lbs boneless skinless chicken breasts cut into 1-1/2” cubes\n1 ½ cups all purpose flour\n1 eggs beaten\n¼ tsp salt\n¼ tsp pepper\nOil for frying\nOrange Sauce\n1 ½ cups water\n2 Tbsps orange juice\n¼ cup lemon juice\n1/3 cup rice vinegar\n2 ½ Tbsp soy sauce\n1 Tbsp orange zest grated\n1 Cup brown sugar packed\n½ tsp ginger root minced\n½ tsp garlic minced\n2 Tbsp green onion chopped\n¼ tsp red pepper flakes\n3 Tbsp cornstarch\n2 Tbsp water\n",
+    "Steps": "Combine flour, salt, and pepper.\nDip chicken in egg mixture and shake in flour mixture to coat.\nDeep fry chicken in batches at 375 degrees in a deep fryer (or use a wok) until completely cooked.\nMeanwhile, in a large saucepan combine 1 ½ cups water, lemon juice, orange juice, rice vinegar, and soy sauce.\nBlend well over medium heat for a few minutes.\nStir in brown sugar, orange zest, ginger garlic, and onion. Bring to a boil.\nCombine 3 tablespoons of cornstarch with 1/4 cup of water and mix thoroughly.\nSlowly stir cornstarch mixture into sauce until it thickens.\nPour sauce over breaded chicken, and if desired add red pepper flakes and garnish with green onions\n",
+    "Nutrition": "Calories: 465kcal | Carbohydrates: 65g | Protein: 37g | Fat: 4g | Saturated Fat: 1g | Cholesterol: 124mg | Sodium: 718mg | Potassium: 689mg | Fiber: 1g | Sugar: 36g | Vitamin A: 140IU | Vitamin C: 10.3mg | Calcium: 49mg | Iron: 2.6mg"
   },
   "California Sushi Rolls": {
-    "description": "",
-    "steps": ""
+    "Description": "",
+    "Equipment": "",
+    "Ingredients": "",
+    "Steps": " ",
+    "Nutrition": ""
   }
 }

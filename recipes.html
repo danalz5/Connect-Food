@@ -5,12 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Website</title>
+    <style>
+      .container {
+        width: 80%;
+        margin: auto;
+        overflow: auto;
+      }
+      .recipe {
+        border: 1px solid #000;
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
     <link rel="stylesheet" href="./style.css" type="text/css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
   </head>
   <body>
     <main>
-        <h1>Recipes</h1>  
+      <div class="container">
+        <h1>Recipes for You</h1>
+        <div class="recipe">
+          <h2>Sour-Cream Lemon Pie</h2>
+          <button>View Recipe</button>
+        </div>
+        <div class="recipe">
+          <h2>Orange Chicken</h2>
+          <button>View Recipe</button>
+        </div>
+        <div class="recipe">
+          <h2>California Sushi Rolls</h2>
+          <button>View Recipe</button>
+        </div>
+      </div>
+      <div class="lower-frame"></div>
     </main>
 	<script src="index.js"></script>
   </body>
