@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+body {
+    background: lightblue;
+}
+
+h1 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font: "Pacifico"
+}
+
+section {
+    background-color: antiquewhite;
+    border-style: solid;
+    border-color: black;
+    border-radius: 25px;
+}
+
+p {
+    padding: 10px;
+}
