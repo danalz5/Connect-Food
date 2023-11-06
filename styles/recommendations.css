@@ -11,11 +11,16 @@ h1 {
     font: "Pacifico"
 }
 
-section {
+h2 {
+    padding: 10px;
+}
+
+div {
     background-color: antiquewhite;
     border-style: solid;
     border-color: black;
     border-radius: 25px;
+    margin: 10px;
 }
 
 p {
