@@ -23,19 +23,35 @@ fetch('../siteData/recommendations.json')
 
         // div to hold all the text
         const newDiv = document.createElement("div");
+        newDiv.id = "food";
+        const title = document.createElement("div");
+        title.id = "title"
 
         // Name of the food
         const para = document.createElement("h2");
         const node = document.createTextNode(`${key}`);
         para.appendChild(node);
-        newDiv.appendChild(para);
 
         for (const prop in value) {
             if (value.hasOwnProperty(prop)) {
-                const desc = document.createElement("p");
-                const detail = document.createTextNode(`${prop}: ${value[prop]}`);
-                desc.appendChild(detail);
-                newDiv.appendChild(desc);
+                if(prop == "Image") {
+                    const imgElement = document.createElement('img');
+                    imgElement.src = `${value[prop]}`
+
+                    imgElement.alt = 'Food Picture'; 
+                    imgElement.width = 200; 
+                    imgElement.height = 150;
+
+                    title.appendChild(imgElement);
+                    title.appendChild(para);
+                    newDiv.insertBefore(title, newDiv.firstChild);
+                }
+                else {
+                    const desc = document.createElement("p");
+                    const detail = document.createTextNode(`${prop}: ${value[prop]}`);
+                    desc.appendChild(detail);
+                    newDiv.appendChild(desc);
+                }
             }
         }
 
