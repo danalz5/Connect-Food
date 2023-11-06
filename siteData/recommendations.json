@@ -6,7 +6,8 @@
       "Restaurant": "Portillo's",
       "Description": "Hot dog served with american cheese and topped with chili and chopped onions.",
       "Dietary": "N/A",
-      "Image": "Images/cheeseDog.avif"
+      "Image": "Images/cheeseDog.avif",
+      "Recommendation from" : "Drew"
     },
     "Chicken 65": {
       "Spice Level": 5,
@@ -15,7 +16,8 @@
       "Restaurant": "Curry on Fire",
       "Description": "Chicken on bone, marinated in yogurt and spices.",
       "Dietary": "N/A",
-      "Image": "Images/chicken65.jpeg"
+      "Image": "Images/chicken65.jpeg",
+      "Recommendation from" : "Teressa"
     },
     "Golden Thai Noodles": {
       "Spice Level": 3,
@@ -24,7 +26,8 @@
       "Restaurant": "Golden Thai",
       "Description": "Stir-fried shrimp, chicken, crab meat stick, vegetables, bean sprouts, in crispy egg noodles.",
       "Dietary": "N/A",
-      "Image": "Images/goldenNoodles.jpeg"
+      "Image": "Images/goldenNoodles.jpeg",
+      "Recommendation from" : "Teressa"
     },
     "Veggie Quesadilla": {
       "Spice Level": 2,
@@ -33,6 +36,7 @@
       "Restaurant": "Lalo's on Maxwell",
       "Description": "Filles with onions, mushrooms, tomatoes, and poblano peppers.",
       "Dietary": "Vegetarian",
-      "Image": "Images/quesadilla.jpeg"
+      "Image": "Images/quesadilla.jpeg",
+      "Recommendation from" : "Drew"
     }
   }
