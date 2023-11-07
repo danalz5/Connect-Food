@@ -1,58 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Website</title>
-    <style>
-      .container {
-        width: 80%;
-        margin: auto;
-        overflow: auto;
-      }
-      .recipe {
-        border: 1px solid #000;
-        margin: 10px;
-        padding: 10px;
-        text-align: center;
-      }
-      #box {
-        background-color: antiquewhite;
-        border-style: solid;
-        border-color: black;
-        border-radius: 25px;
-        margin: 10px;
-      }
-    </style>
-    <link rel="stylesheet" href="./styles/style.css" type="text/css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
-  </head>
-  <body>
-    <main>
-      <div class="container">
-        <h1>Recipes for You</h1>
-        <button onclick="window.location.href = 'index.html';">
-          <img src="https://www.rawshorts.com/freeicons/wp-content/uploads/2017/01/blue_repicthousebase_1484336386-1.png" width="20px" height="20px"/>
-        </button>
-        <button onclick="window.location.href = 'profile.html';">
-          <img src="Images/user.png" width="20px" height="20px"/>
-        </button>
-        <div class="recipe">
-          <h2>Sour-Cream Lemon Pie</h2>
-          <button>View Recipe</button>
-        </div>
-        <div class="recipe">
-          <h2>Orange Chicken</h2>
-          <button>View Recipe</button>
-        </div>
-        <div class="recipe">
-          <h2>California Sushi Rolls</h2>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipes</title>
+  <link rel="stylesheet" href="./styles/recipes.css" type="text/css">
+</head>
+<body>
+<div class="container">
+  <div class="sidebar">
+    <img src="Images/recipes_page.png" alt="Chef preparing food">
+  </div>
+  <div class="content">
+    <div class="recipes">
+      <!-- Sour-Cream Lemon Pie Recipe Card -->
+      <div class="recipe-card">
+        <label class="heart-btn">
+          <input type="checkbox" class="heart-checkbox" />
+          <span class="heart-icon">♥</span>
+        </label>
+        <img src="Images/lemon_pie.jpg" alt="Sour-Cream Lemon Pie">
+        <div class="recipe-details">
+          <h3>Sour-Cream Lemon Pie</h3>
+          <p>A tangy delight with a creamy twist that will tantalize your taste buds.</p>
+          <p>Calories: 523kcal | Carbohydrates: 47g | Protein: 4g | Fat: 35g | Saturated Fat: 20g | Cholesterol: 166mg | Sodium: 266mg | Potassium: 148mg | Sugar: 33g | Vitamin A: 1160IU | Vitamin C: 7.3mg | Calcium: 108mg | Iron: 0.9mg</p>
           <button>View Recipe</button>
         </div>
       </div>
-      <div class="lower-frame"></div>
-    </main>
-	<script src="index.js"></script>
-  </body>
+      <!-- Additional recipe cards with heart button can be replicated here... -->
+    </div>
+  </div>
+</div>
+</body>
 </html>

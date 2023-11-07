@@ -1,0 +1,115 @@
+/*default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    font-family: "Pacifico", cursive;
+    display: flex;
+    height: 100%;
+    background-color: #ADD8E6; /* Light blue background for the whole page */
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.sidebar, .content {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar {
+    width: 40%;
+    background-color: #ADD8E6; /* Light blue background for the sidebar */
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.sidebar img {
+    max-width: 100%;
+    height: auto;
+}
+
+.content {
+    width: 60%; /* Content width */
+    background-color: #ADD8E6; /* Light blue background for content */
+    overflow-y: auto; /* Makes the right-hand side scrollable vertically */
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+}
+
+.recipes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.recipe-card {
+    position: relative; /* Added for absolute positioning of the heart button */
+    background-color: antiquewhite;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px 0;
+    width: 90%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.recipe-card img {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    object-fit: cover;
+    margin: 0 20px;
+}
+
+.recipe-details {
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.recipe-card button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #e2b490;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.recipe-card button:hover {
+    background-color: #cba586;
+}
+
+/* Styles for heart button */
+.heart-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 24px;
+    color: red;
+    padding: 0;
+    outline: none;
+}
+
+p {
+    font-family: 'Arial', sans-serif;
+}
