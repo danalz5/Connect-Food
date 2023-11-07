@@ -8,15 +8,114 @@
     <link rel="stylesheet" href="./friends_list.css" type="text/css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <style>
+      body {
+          background: lightblue;
+        }
+
+        h1 {
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          font-family: "Pacifico", cursive;
+        }
+        
+        h2 {
+          font-family: "Arial";
+        }
+
+        img {
+          padding: 10px;
+          border-radius: 25px;
+          display: inline-block;
+          vertical-align: middle;
+        }
+
+        #friend {
+          background-color: antiquewhite;
+          border-style: solid;
+          border-color: black;
+          border-radius: 25px;
+          margin: 10px;
+        }
+
+        #addFriend {
+          background-color: antiquewhite;
+          border-style: solid;
+          border-color: black;
+          border-radius: 25px;
+          margin: 10px;
+        }
+
+        #friendName {
+          text-align: center;
+          display: flex;
+          justify-content: left;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 20px;
+          margin:10px
+        }
+
+        #title {
+          padding: 10px;
+          display: inline-block;
+        }
+
+        input[type='text'] {
+          min-width: 200px;
+          padding: 5px;
+          margin: 10px;
+          border-radius: 15px;
+        }
+
+        p {
+          font-family: Arial;
+        }
+
+        
+    </style>
   </head>
   <body>
     <main>
         <h1>Friends List</h1>
         <section id="friendList"></section>
         <div id="friend">
+          <div style="display: inline-block;">
+            <img src="https://img.freepik.com/premium-photo/puppy-samoyed-dog_87557-14008.jpg" alt="Daniel pfp" width="100" height="75">
+            <div id="friendName" style = "position:relative; left:22px; top:-10px">Daniel</div>
+          </div>
+          <div style="display: inline-block;">
+            <p style="position:relative; top:-20px;">Bio: Hi my name is Daniel. I go to UIC and I love all types of foods. Since I love spicy food and don't have any dietary restriction I can eat anything!</p>
+            <p style="position:relative; top:-20px;">My Recipes: Cilantro Lime Rice, Tonkotsu Ramen</p>
+            <p style="position:relative; top:-20px;">My Food Recommendations: Hot Dog from Portillos, Tonkotsu Ramen from Taro Milk Tea, Butter Chicken from Curry on Fire</p>
+          </div>
+        </div>
+        <div id="friend">
+          <div style="display: inline-block;">
+            <img src="https://i.pinimg.com/564x/0f/b9/f0/0fb9f0d29a9b43866cf7c2cc12b3fd3f.jpg" alt="Daniel pfp" width="100" height="75">
+            <div id="friendName" style = "position:relative; left:26px; top:-10px">Drew</div>
+          </div>
+          <div style="display: inline-block;">
+            <p style="position:relative; top:-20px;">Bio: Hey its Drew! I'm a college student who usually orders food while studying. I try to find cheap vegetarian food since I'm vegetarian.</p>
+            <p style="position:relative; top:-20px;">My Recipes: Miso Soup, Veggie Tacos</p>
+            <p style="position:relative; top:-20px;">My Food Recommendations: Panang Curry from Oppart Thai</p>
+          </div>
+        </div>
+        <div id="friend">
+          <div style="display: inline-block;">
+            <img src="https://cdn.thetealmango.com/wp-content/uploads/2021/07/ligh-and-book.jpg" alt="Daniel pfp" width="100" height="75">
+            <div id="friendName" style = "position:relative; left:15px; top:-10px">Teressa</div>
+          </div>
+          <div style="display: inline-block;">
+            <p style="position:relative; top:-20px;">Bio: Hello, I'm Teressa! I really like to go out and get food with friends. I'm always looking for big portions at a low price so me and my friends can split everything!</p>
+            <p style="position:relative; top:-20px;">My Recipes: Miso Soup, Veggie Tacos</p>
+            <p style="position:relative; top:-20px;">My Food Recommendations: Panang Curry from Oppart Thai</p>
+          </div>
+        </div>
+        <div id="addFriend">
           <form>
-            <h2 style="display:block;">Add a Friend</h2>
-            <input id="username" type="text" placeholder="Enter a username..."/>
+            <h2 style="margin: 10px;">Add a Friend!</h2>
+            <input id="username" type="text" placeholder="Enter a username..." style="margin: 10px;"/>
             <br/>
             <input id="enterBtn" type="submit" style="margin: 10px;"/>
           </form>
