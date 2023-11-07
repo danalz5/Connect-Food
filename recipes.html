@@ -9,16 +9,16 @@
 <body>
 <div class="container">
   <div class="sidebar">
+    <!-- Image for the sidebar -->
     <img src="Images/recipes_page.png" alt="Chef preparing food">
   </div>
   <div class="content">
+    <div class="header">
+    </div>
     <div class="recipes">
       <!-- Sour-Cream Lemon Pie Recipe Card -->
       <div class="recipe-card">
-        <label class="heart-btn">
-          <input type="checkbox" class="heart-checkbox" />
-          <span class="heart-icon">♥</span>
-        </label>
+        <button class="heart-btn">♥</button>
         <img src="Images/lemon_pie.jpg" alt="Sour-Cream Lemon Pie">
         <div class="recipe-details">
           <h3>Sour-Cream Lemon Pie</h3>
@@ -27,7 +27,29 @@
           <button>View Recipe</button>
         </div>
       </div>
-      <!-- Additional recipe cards with heart button can be replicated here... -->
+      <!-- Orange Chicken Recipe Card -->
+      <div class="recipe-card">
+        <button class="heart-btn">♥</button>
+        <img src="Images/orange_chicken.jpg" alt="Orange Chicken">
+        <div class="recipe-details">
+          <h3>Orange Chicken</h3>
+          <p>Sweet and savory chicken pieces that bring a burst of orange zestiness to your dinner table.</p>
+          <p>Calories: 465kcal | Carbohydrates: 65g | Protein: 37g | Fat: 4g | Saturated Fat: 1g | Cholesterol: 124mg | Sodium: 718mg | Potassium: 689mg | Fiber: 1g | Sugar: 36g | Vitamin A: 140IU | Vitamin C: 10.3mg | Calcium: 49mg | Iron: 2.6mg</p>
+          <button type="button" onclick="window.location.href = 'orange_chicken.html';">View Recipe</button>
+        </div>
+      </div>
+      <!-- California Sushi Rolls Recipe Card -->
+      <div class="recipe-card">
+        <button class="heart-btn">♥</button>
+        <img src="Images/california_sushi.jpg" alt="California Sushi Rolls">
+        <div class="recipe-details">
+          <h3>California Sushi Rolls</h3>
+          <p>A classic sushi roll filled with fresh avocado, cucumber, and crab meat.</p>
+          <p>Calories: 140kcal | Carbohydrates: 27g | Protein: 5g | Fat: 1g | Saturated Fat: 0g | Cholesterol: 6mg | Sodium: 642mg | Potassium: 71mg | Fiber: 1g | Sugar: 3.2g | Vitamin A: 6mcg | Vitamin C: 1.4mg | Calcium: 9mg | Iron: 0.3mg</p>
+          <button>View Recipe</button>
+        </div>
+      </div>
+      <!-- Additional recipe cards go here... -->
     </div>
   </div>
 </div>
