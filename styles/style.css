@@ -46,3 +46,19 @@ button {
     height: 50px;
     margin-left: auto;
 }
+
+#pfp {
+    border-radius: 50%;
+}
+
+#profile {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+#bio {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+  }
