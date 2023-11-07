@@ -5,12 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Website</title>
-    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link rel="stylesheet" href="./styles/style.css" type="text/css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
   </head>
   <body>
     <main>
-        <h1>Connect Food</h1>  
+        <div id = "head">
+          <h1>Connect Food</h1>  
+          <button onclick="window.location.href = 'profile.html';">
+            <img src="Images/user.png" width="100%" height="80%"/>
+          </button>
+        </div>
         <div id="Options">
           <button>
             <img src="Images/Recommendations.jpg.webp" width="100%" height="60%" onclick="window.location.href = 'recommendations.html';"/>
@@ -26,6 +31,6 @@
           </button>
         </div>
     </main>
-	<script src="index.js"></script>
+	<script type="module" src="JS/index.js"></script>
   </body>
 </html>
