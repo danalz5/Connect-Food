@@ -1,15 +1,4 @@
-
-// import foods from './../siteData/recommendations.json' assert {type: 'json'};
-
-// console.log(foods);
-
 const recList = document.getElementById('recList');
-
-// const para = document.createElement("h2");
-// const node = document.createTextNode("" + foods['Chicken 65']);
-// para.appendChild(node);
-
-// recList.appendChild(para);
 
 fetch('../siteData/recommendations.json')
   .then(response => response.json()) // Parse the response as JSON
