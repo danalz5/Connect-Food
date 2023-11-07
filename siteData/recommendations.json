@@ -7,7 +7,10 @@
       "Description": "Hot dog served with american cheese and topped with chili and chopped onions.",
       "Dietary": "N/A",
       "Image": "Images/cheeseDog.avif",
-      "Recommendation from" : "Drew"
+      "Recommendation from" : "Drew",
+      "Review1": "Julie says: Absolutely delicious! Will definitely order again soon!",
+      "Review2": "Oscar says: Decent option if you need something quick.",
+      "Review3": "Tyler says: My guilty pleasure!"
     },
     "Chicken 65": {
       "Spice Level": 5,
@@ -17,7 +20,10 @@
       "Description": "Chicken on bone, marinated in yogurt and spices.",
       "Dietary": "N/A",
       "Image": "Images/chicken65.jpeg",
-      "Recommendation from" : "Teressa"
+      "Recommendation from" : "Teressa",
+      "Review1": "Drew says: To die for! Couldn't live without this",
+      "Review2": "Oscar says: Truly an exquisite meal.",
+      "Review3": "Teressa says: This is my favorite! I always have it in between classes."
     },
     "Golden Thai Noodles": {
       "Spice Level": 3,
@@ -27,7 +33,10 @@
       "Description": "Stir-fried shrimp, chicken, crab meat stick, vegetables, bean sprouts, in crispy egg noodles.",
       "Dietary": "N/A",
       "Image": "Images/goldenNoodles.jpeg",
-      "Recommendation from" : "Teressa"
+      "Recommendation from" : "Teressa",
+      "Review1": "Julie says: It was just okay. A bit over-priced for what you get.",
+      "Review2": "Oscar says: Really good! My comfort food :)",
+      "Review3": "Tyler says: I thought it was a bit bland..."
     },
     "Veggie Quesadilla": {
       "Spice Level": 2,
@@ -37,6 +46,9 @@
       "Description": "Filles with onions, mushrooms, tomatoes, and poblano peppers.",
       "Dietary": "Vegetarian",
       "Image": "Images/quesadilla.jpeg",
-      "Recommendation from" : "Drew"
+      "Recommendation from" : "Drew",
+      "Review1": "Drew says: One of my favorites near campus.",
+      "Review2": "Teressa says: The flavor left something to be desired. Would not order this if I were you.",
+      "Review3": "Sarah says: Very healthy options, albeit a bit pricey."
     }
   }
