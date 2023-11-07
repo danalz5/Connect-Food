@@ -73,6 +73,27 @@ fetch('../siteData/recommendations.json')
             }
         }
 
+        const input = document.createElement('input');
+        input.placeholder = "Write your review here..."
+        input.type = 'text'
+
+        const submit = document.createElement('input');
+        submit.type = 'submit';
+        reviewDiv.appendChild(input);
+        reviewDiv.appendChild(submit);
+
+        submit.addEventListener('click', function() {
+            if(input.value.length > 0) {
+                const desc = document.createElement("p");
+                const detail = document.createTextNode(`You said: ${input.value}`);
+                desc.appendChild(detail);
+                reviewDiv.appendChild(desc);
+
+                input.style.display = "none";
+                submit.style.display = "none";
+            }
+          });
+
         foodSection.appendChild(newDiv);
         foodSection.appendChild(reviewDiv);
         recList.appendChild(foodSection);
