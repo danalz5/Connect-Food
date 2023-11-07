@@ -20,6 +20,12 @@ h2 {
 
 p {
     padding: 10px;
+    font-family: "Monaco";
+    max-width: 600px;
+}
+
+div {
+    padding: 5px;
 }
 
 img {

@@ -22,10 +22,22 @@ fetch('../siteData/recommendations.json')
         console.log(`Key: ${key}, Value:`, value);
 
         // div to hold all the text
+        const foodSection = document.createElement("div");
+        foodSection.id = "food"
+        //foodSection.style.display = "inline-block";
+
         const newDiv = document.createElement("div");
-        newDiv.id = "food";
+        newDiv.style.display = "inline-block";
+
         const title = document.createElement("div");
         title.id = "title"
+
+        const reviewDiv = document.createElement("div");
+        reviewDiv.style.display = "inline-block";
+        const desc = document.createElement("h2");
+        const detail = document.createTextNode("Reviews:");
+        desc.appendChild(detail);
+        reviewDiv.appendChild(desc);
 
         // Name of the food
         const para = document.createElement("h2");
@@ -46,6 +58,12 @@ fetch('../siteData/recommendations.json')
                     title.appendChild(para);
                     newDiv.insertBefore(title, newDiv.firstChild);
                 }
+                else if(prop.startsWith("Review")) {
+                    const desc = document.createElement("p");
+                    const detail = document.createTextNode(`${value[prop]}`);
+                    desc.appendChild(detail);
+                    reviewDiv.appendChild(desc);
+                }
                 else {
                     const desc = document.createElement("p");
                     const detail = document.createTextNode(`${prop}: ${value[prop]}`);
@@ -55,7 +73,9 @@ fetch('../siteData/recommendations.json')
             }
         }
 
-        recList.appendChild(newDiv);
+        foodSection.appendChild(newDiv);
+        foodSection.appendChild(reviewDiv);
+        recList.appendChild(foodSection);
       }
     }
   })
