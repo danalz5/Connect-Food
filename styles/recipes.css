@@ -113,3 +113,12 @@ body {
 p {
     font-family: 'Arial', sans-serif;
 }
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons button {
+    margin: 5px;
+}
