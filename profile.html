@@ -18,12 +18,23 @@
             <img id="pfp" src = "Images/daniel_profile_pic.png" />
             <h1>Bio</h1>
             <div id="bio">
-                <p> Hi! I'm Jonas. I really like trying new food and rarely get the same thing twice.
-                    I don't mind paying for food as long as it's really good regardless of portion size.
-                    I try to eat gluten-free but sometimes I'll cheat a little.
-                </p>
+                <textarea readonly id="myTextarea">Hi! I'm Jonas. I really like trying new food and rarely get the same thing twice. I don't mind paying for food as long as it's really good regardless of portion size. I try to eat gluten-free but sometimes I'll cheat a little.</textarea>
+
+                <!-- Button to enable editing -->
+                <button onclick="enableEditing()">Edit</button>
             </div>
         </div>
+
+        <script>
+          // Function to enable editing of the textbox
+          function enableEditing() {
+            // Get the textarea element
+            var textarea = document.getElementById('myTextarea');
+
+            // Enable editing by removing the 'readonly' attribute
+            textarea.removeAttribute('readonly');
+          }
+        </script>
     </main>
 	<script type="module" src="JS/index.js"></script>
   </body>
