@@ -1,20 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 body {
     background: antiquewhite;
 }
 
 h1 {
+    padding-top: 20px;
     text-align: center;
     display: flex;
     justify-content: center;
-    font-family: "Pacifico", cursive;
+    font-family: 'Montserrat', sans-serif;
 }
 
+#username {
+    background-color: antiquewhite;
+    border-radius: 5px;
+}
+
+#head {
+    margin-top: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#head button{
+    width: 50px;
+    height: 50px;
+    background-color: lightblue;
+    transition: ease-in-out 0.2s;
+}
+
+#head button:hover{
+    transform: scale(1.05);
+}
 
 #pfp {
     border-radius: 50%;
+    width: 400px;
+    height: 400px;
 }
 
 #profile {
@@ -22,28 +46,27 @@ h1 {
     align-items: center;
     text-align: center;
     justify-content: center;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 30%;
+    margin-right: 30%;
     border-radius: 2%;
     transition: transform 0.2s ease-in-out;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-}
-
-#profile:hover {
-    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
-    transform: scale(1.01);
+    padding-bottom: 20px;
 }
 
 #bio {
     width: 500px;
-    margin: 0 auto;
+    margin: auto;
     text-align: center;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    background: antiquewhite;
+    border-radius: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
-textarea {
-    height: 100px;
-    width: 500px;
+p {
+    font-family: 'Montserrat', sans-serif;
 }
 
 button {
@@ -51,6 +74,7 @@ button {
     border: none;
     border-radius: 20px;
     cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .dropdown {
@@ -62,13 +86,14 @@ button {
     display: none;
     position: absolute;
     background-color: lightblue;
-    min-width: 160px;
+    min-width: 190px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
     padding: 10px;
     opacity: 0;
     border-radius: 10px;
     transition: opacity 0.3s ease-in-out;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .dropdown:hover .dropdown-content {
@@ -82,8 +107,9 @@ button {
     margin-bottom: 8px;
 }
 
-.dropdown-content input[type="checkbox"] {
-    margin-right: 5px;
+.dropdown-content input[type="checkbox"], 
+.dropdown-content input[type="radio"]{
+    margin-right: 10px;
 }
 
 .dropdown-content a {
@@ -94,4 +120,42 @@ button {
 
 .dropdown-content a:hover {
     background-color: lightblue;
+}
+
+#dietaryImg {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+
+#spiceImg {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+
+#dollarImg {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+
+#profileOptions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    padding-bottom: 400px;
+}
+
+#profileOptions button{
+    height: 50px;
+    width: 200px;
+    background-color: lightblue;
+    font-size: 15px;
+    transition: ease-in-out 0.3s;
+}
+
+#profileOptions button:hover{
+    transform: scale(1.05);
 }

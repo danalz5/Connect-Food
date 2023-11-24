@@ -5,79 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Website</title>
-    <link rel="stylesheet" href="./friends_list.css" type="text/css">
+    <link rel="stylesheet" href="./styles/friends_list.css" type="text/css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
-    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
-    <style>
-      body {
-          background: lightblue;
-        }
-
-        h1 {
-          text-align: center;
-          display: flex;
-          justify-content: center;
-          font-family: "Pacifico", cursive;
-        }
-        
-        h2 {
-          font-family: "Arial";
-        }
-
-        img {
-          padding: 10px;
-          border-radius: 25px;
-          display: inline-block;
-          vertical-align: middle;
-        }
-
-        #friend {
-          background-color: antiquewhite;
-          border-style: solid;
-          border-color: black;
-          border-radius: 25px;
-          margin: 10px;
-        }
-
-        #addFriend {
-          background-color: antiquewhite;
-          border-style: solid;
-          border-color: black;
-          border-radius: 25px;
-          margin: 10px;
-        }
-
-        #friendName {
-          text-align: center;
-          display: flex;
-          justify-content: left;
-          font-family: Arial, Helvetica, sans-serif;
-          font-size: 20px;
-          margin:10px
-        }
-
-        #title {
-          padding: 10px;
-          display: inline-block;
-        }
-
-        input[type='text'] {
-          min-width: 200px;
-          padding: 5px;
-          margin: 10px;
-          border-radius: 15px;
-        }
-
-        p {
-          font-family: Arial;
-        }
-
-        
-    </style>
   </head>
   <body>
     <main>
-        <h1>Friends List</h1>
+        <h1 id="friendList">Friends List</h1>
         <button onclick="window.location.href = 'index.html';">
           <img src="https://www.rawshorts.com/freeicons/wp-content/uploads/2017/01/blue_repicthousebase_1484336386-1.png" width="20px" height="20px"/>
         </button>
