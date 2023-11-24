@@ -1,4 +1,5 @@
-/*default styles */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 body, html {
     margin: 0;
     padding: 0;
@@ -6,7 +7,7 @@ body, html {
 }
 
 body {
-    font-family: "Pacifico", cursive;
+    font-family: 'Montserrat', sans-serif;
     display: flex;
     height: 100%;
     background-color: #ADD8E6; /* Light blue background for the whole page */
@@ -25,7 +26,7 @@ body {
 
 .sidebar {
     width: 40%;
-    background-color: #ADD8E6; /* Light blue background for the sidebar */
+    background-color: antiquewhite; /* Light blue background for the sidebar */
     align-items: center;
     justify-content: center;
     padding: 20px;
@@ -38,7 +39,7 @@ body {
 
 .content {
     width: 60%; /* Content width */
-    background-color: #ADD8E6; /* Light blue background for content */
+    background-color: antiquewhite; /* Light blue background for content */
     overflow-y: auto; /* Makes the right-hand side scrollable vertically */
 }
 
@@ -56,14 +57,14 @@ body {
 
 .recipe-card {
     position: relative; /* Added for absolute positioning of the heart button */
-    background-color: antiquewhite;
-    border: 2px solid black;
+    background-color: lightblue;
     border-radius: 10px;
     margin: 10px 0;
     width: 90%;
     box-sizing: border-box;
     display: flex;
     align-items: center;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 .recipe-card img {
@@ -111,7 +112,7 @@ body {
 }
 
 p {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .buttons {
