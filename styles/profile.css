@@ -12,11 +12,13 @@ h1 {
     font-family: 'Montserrat', sans-serif;
 }
 
+
 #head {
-    margin-top: 20px;
+    margin-top: 1%;
     display:flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 1%;
 }
 
 #head button{
@@ -28,6 +30,10 @@ h1 {
 
 #head button:hover{
     transform: scale(1.05);
+}
+
+#head button:active {
+    background-color: rgb(126, 185, 206);
 }
 
 #pfp {
@@ -69,7 +75,7 @@ h1 {
 }
 
 #preferences {
-    margin-left: 5%;
+    margin-left: 10%;
 }
 
 #profileOptions {
@@ -88,6 +94,10 @@ h1 {
 
 #profileOptions button:hover{
     transform: scale(1.05);
+}
+
+#profileOptions button:active {
+    background-color: rgb(126, 185, 206);
 }
 
 
