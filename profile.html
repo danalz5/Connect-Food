@@ -15,60 +15,61 @@
           <img src="https://www.rawshorts.com/freeicons/wp-content/uploads/2017/01/blue_repicthousebase_1484336386-1.png" width="20px" height="20px"/>
         </button>
       </div>
-      <div id="profile">
-        <h1 contenteditable=false id="username">dan_alz</h1>  
-        <img id="pfp" src = "Images/profile_pic.jpg" />
-        <div id="prefrences">
-        <h1>Preferences</h1>
-        <p>Restrictions: </p>
-        <div id='dietaryP'>
-        </div>
-        <p>Spice Level (1-3): </p>
-        <div id='spiceP'>
-        </div>
-        <p>Price Range (1-3): </p>
-        <div id='priceP'>
-        </div>
-      </div>
-          <h1>Bio</h1>
-          <div id="bio">
-              <p contenteditable="false" id="bioText">
-                Hi I'm Daniel! I like trying all kinds of foods and I'm always looking for new places to try.
-                Spicy food is my favorite and I love Indian cuisine. I enjoy all kinds of food but I like to 
-                eat vegetarian since a couple of my friends are vegetarian.
-
-              </p>
+      <div id="profileContent">
+          <div id="wrapper">
+          <div id="profile">
+            <div id="user">
+              <h1 contenteditable=false id="username">dan_alz</h1>  
+              <img id="pfp" src = "Images/profile_pic.jpg" />
+              <h1>Bio</h1>
+              <div id="bio">
+                  <p contenteditable="false" id="bioText">
+                    Hi I'm Daniel! I like trying all kinds of foods and I'm always looking for new places to try.
+                    Spicy food is my favorite and I love Indian cuisine. I enjoy all kinds of food but I like to 
+                    eat vegetarian since a couple of my friends are vegetarian.
+                  </p>
+              </div>
+            </div>
+            <div id="preferences">
+              <h1>Preferences</h1>
+              <p>Restrictions: </p>
+              <div id='dietaryP'></div>
+              <p>Spice Level (1-3): </p>
+              <div id='spiceP'></div>
+              <p>Price Range (1-3): </p>
+              <div id='priceP'></div>
+            </div>
           </div>
-        </div>
-        <div id='profileOptions'>
-          <!-- Button to enable editing -->
-          <button id="editButton" onclick="editButtonAction()">Edit</button>
-          <div class="dropdown">
-            <button>Preferences</button>
-            <div class="dropdown-content">
-              <div id="column">
-                <label>Dietary Restriction</label>
-                <label><input type="checkbox" id="vegetarian">Vegetarian</label>
-                <label><input type="checkbox" id="vegan">Vegan</label>
-                <label><input type="checkbox" id="gluten-free">Gluten-Free</label>
-              </div>
-              <div id="column">
-                <label>Spice Level</label>
-                <label><input type="radio" name="spiceLevel" id="mild">Mild</label>
-                <label><input type="radio" name="spiceLevel" id="moderate">Moderate</label>
-                <label><input type="radio" name="spiceLevel" id="spicy">Spicy</label>
-              </div>
-              <div id="column">
-                <label>Price Range</label>
-                <label><input type="radio" name="priceRange" id="cheap">$0-$9.99</label>
-                <label><input type="radio" name="priceRange" id="affordable">$10-$19.99</label>
-                <label><input type="radio" name="priceRange" id="expensive">$20-$29.99</label>
+            <div id='profileOptions'>
+              <!-- Button to enable editing -->
+              <button id="editButton" onclick="editButtonAction()">Edit</button>
+              <div class="dropdown">
+                <button>Preferences</button>
+                <div class="dropdown-content">
+                  <div id="column">
+                    <label>Dietary Restriction</label>
+                    <label><input type="checkbox" id="vegetarian">Vegetarian</label>
+                    <label><input type="checkbox" id="vegan">Vegan</label>
+                    <label><input type="checkbox" id="gluten-free">Gluten-Free</label>
+                  </div>
+                  <div id="column">
+                    <label>Spice Level</label>
+                    <label><input type="radio" name="spiceLevel" id="mild">Mild</label>
+                    <label><input type="radio" name="spiceLevel" id="moderate">Moderate</label>
+                    <label><input type="radio" name="spiceLevel" id="spicy">Spicy</label>
+                  </div>
+                  <div id="column">
+                    <label>Price Range</label>
+                    <label><input type="radio" name="priceRange" id="cheap">$0-$9.99</label>
+                    <label><input type="radio" name="priceRange" id="affordable">$10-$19.99</label>
+                    <label><input type="radio" name="priceRange" id="expensive">$20-$29.99</label>
+                  </div>
+                </div>
               </div>
             </div>
         </div>
-        </div>
-        <script src="JS/profile.js"></script>
+      </div>
     </main>
-	<script type="module" src="JS/index.js"></script>
+    <script src="JS/profile.js"></script>
   </body>
 </html>

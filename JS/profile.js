@@ -93,7 +93,6 @@ document.addEventListener("DOMContentLoaded", function () {
             var radioId = this.id;
 
             // Save the state to localStorage
-            localStorage.setItem(radioId, JSON.stringify(this.checked));
             console.log('Item ' + (this.checked ? 'checked' : 'unchecked') + ':', radioId);
             if(radio.id == 'cheap' || radio.id == 'affordable' || radio.id == 'expensive'){
                 updatePrice(radio.id, radio.checked);
@@ -156,11 +155,20 @@ document.addEventListener("DOMContentLoaded", function () {
             imageElement3.alt = 'chile';
             imageElement3.id = 'spiceImg';
             if(spiceId == 'mild') {
+                localStorage.setItem('mild', 'true');
+                localStorage.setItem('moderate', 'false');
+                localStorage.setItem('spicy', 'false');
                 spiceContainer.appendChild(imageElement1);
             } else if (spiceId == 'moderate') {
+                localStorage.setItem('mild', 'false');
+                localStorage.setItem('moderate', 'true');
+                localStorage.setItem('spicy', 'false');
                 spiceContainer.appendChild(imageElement1);
                 spiceContainer.appendChild(imageElement2);
             } else {
+                localStorage.setItem('mild', 'false');
+                localStorage.setItem('moderate', 'false');
+                localStorage.setItem('spicy', 'true');
                 spiceContainer.appendChild(imageElement1);
                 spiceContainer.appendChild(imageElement2);
                 spiceContainer.appendChild(imageElement3);
@@ -189,11 +197,20 @@ document.addEventListener("DOMContentLoaded", function () {
             imageElement3.alt = 'dollar';
             imageElement3.id = 'dollarImg';;
             if(priceId == 'cheap') {
+                localStorage.setItem('cheap', 'true');
+                localStorage.setItem('affordable', 'false');
+                localStorage.setItem('expensive', 'false');
                 priceContainer.appendChild(imageElement1);
             } else if (priceId == 'affordable') {
+                localStorage.setItem('cheap', 'false');
+                localStorage.setItem('affordable', 'true');
+                localStorage.setItem('expensive', 'false');
                 priceContainer.appendChild(imageElement1);
                 priceContainer.appendChild(imageElement2);
             } else {
+                localStorage.setItem('cheap', 'false');
+                localStorage.setItem('affordable', 'false');
+                localStorage.setItem('expensive', 'true');
                 priceContainer.appendChild(imageElement1);
                 priceContainer.appendChild(imageElement2);
                 priceContainer.appendChild(imageElement3);
