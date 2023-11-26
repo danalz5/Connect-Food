@@ -53,6 +53,32 @@ fetch('../siteData/recommendations.json')
                     desc.appendChild(detail);
                     reviewDiv.appendChild(desc);
                 }
+                else if(prop == "Spice Level") {
+                  var mild = localStorage.getItem('mild');
+                  var moderate = localStorage.getItem('moderate');
+                  var spicy = localStorage.getItem('spicy');
+                  
+                  var sLevel;
+                  if(mild) {
+                    sLevel = "Mild"
+                  }
+                  else if(moderate) {
+                    sLevel = "Moderate"
+                  }
+                  else if(spicy) {
+                    sLevel = "Spicy"
+                  }
+
+                  if(sLevel != value[prop]) {
+                    foodSection.style.display = 'none';
+                  }
+                  else {
+                    const desc = document.createElement("p");
+                    const detail = document.createTextNode(`${prop}: ${value[prop]}`);
+                    desc.appendChild(detail);
+                    newDiv.appendChild(desc);
+                  }
+                }
                 else {
                     const desc = document.createElement("p");
                     const detail = document.createTextNode(`${prop}: ${value[prop]}`);
