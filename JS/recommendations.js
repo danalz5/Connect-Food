@@ -136,6 +136,10 @@ fetch('../siteData/recommendations.json')
     }
     console.log(pLevel);
 
+    var vegetarian = localStorage.getItem('vegetarian');
+    var vegan = localStorage.getItem('vegan');
+    var glutenFree = localStorage.getItem('gluten-free');
+
     divList.forEach(function(foodItem) {
       var foodText = foodItem.querySelectorAll('p');
       foodText.forEach(function(text) {
@@ -150,6 +154,27 @@ fetch('../siteData/recommendations.json')
           var content = text.textContent.split(':')
           var level = content[1].trim().substring(1);
           if(pLevel < parseInt(level, 10)) {
+            foodItem.style.display = 'None';
+          }
+        }
+        else if(text.textContent.startsWith("Dietary:")) {
+          var content = text.textContent.split(':')
+          var pref = content[1].trim();
+          console.log(pref);
+
+          if(pref == "Gluten-Free" && glutenFree == "true") {
+
+          }
+          else if(pref == "Vegetarian" && vegetarian == "true") {
+
+          }
+          else if(pref == "Vegan" && vegan == "true") {
+
+          }
+          else if(vegan == "false" && vegetarian == "false" && glutenFree == "false") {
+
+          }
+          else {
             foodItem.style.display = 'None';
           }
         }
