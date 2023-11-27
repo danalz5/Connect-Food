@@ -108,7 +108,7 @@ fetch('../siteData/recommendations.json')
     var spicy = localStorage.getItem('spicy');
     console.log(spicy);
 
-    var sLevel = "none";
+    var sLevel = "Z";
     if(mild == "true") {
       sLevel = "Mild"
     }
@@ -120,6 +120,22 @@ fetch('../siteData/recommendations.json')
     }
     console.log(sLevel);
 
+    var cheap = localStorage.getItem('cheap');
+    var affordable = localStorage.getItem('affordable');
+    var expensive = localStorage.getItem('expensive');
+
+    var pLevel = 9999;
+    if(cheap == "true") {
+      pLevel = 10
+    }
+    else if(affordable == "true") {
+      pLevel = 20
+    }
+    else if(expensive == "true") {
+      pLevel = 30
+    }
+    console.log(pLevel);
+
     divList.forEach(function(foodItem) {
       var foodText = foodItem.querySelectorAll('p');
       foodText.forEach(function(text) {
@@ -130,8 +146,15 @@ fetch('../siteData/recommendations.json')
             foodItem.style.display = 'None';
           }
         }
+        else if(text.textContent.startsWith("Price:")) {
+          var content = text.textContent.split(':')
+          var level = content[1].trim().substring(1);
+          if(pLevel < parseInt(level, 10)) {
+            foodItem.style.display = 'None';
+          }
+        }
       })
     });
   };
 
-  document.getElementById('recButton').addEventListener('click', filterFood);
+  //document.getElementById('recButton').addEventListener('click', filterFood);
