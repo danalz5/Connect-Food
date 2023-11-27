@@ -34,14 +34,41 @@
         <section id="recList">
         </section>
         <div id="food">
-          <form>
+          <div id="recForm">
             <h2 style="display:block;">Add a Recommendation</h2>
             <input id="foodItem" type="text" placeholder="Enter the name of the dish..."/>
             <input id="restaurant" type="text" placeholder="Enter the name of the restaurant..."/>
             <input id="review" type="text" placeholder="Enter your review of the dish..."/>
             <br/>
-            <input id="submitBtn" type="submit" style="margin: 10px;"/>
-          </form>
+            <button id="submitBtn" onclick="submitRec()" style="margin: 10px;">
+              Submit Recommendation
+            </button>
+            <p id='errorMsg' style="display: None;">Please fill in all required fields</p>
+            <script>
+              function submitRec() {
+                console.log("Entered Form")
+
+                var val1 = document.getElementById('foodItem').value;
+                var val2 = document.getElementById('restaurant').value;
+                var val3 = document.getElementById('review').value;
+
+                if(val1.length > 0 && val2.length > 0 && val3.length > 0) {
+                  var recommendation = [];
+
+                  recommendation.push(document.getElementById('foodItem').value);
+                  recommendation.push(document.getElementById('restaurant').value);
+                  recommendation.push(document.getElementById('review').value);
+
+                  console.log(recommendation)
+                  localStorage.setItem('recommendation', JSON.stringify(recommendation));
+                }
+                else {
+                  var form = document.getElementById('errorMsg');
+                  form.style.display = "block";
+                }
+              }
+            </script>
+          </div>
         </div>
     </main>
 	<script type="module" src="JS/recommendations.js"></script>

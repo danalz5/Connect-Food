@@ -175,7 +175,7 @@ fetch('../siteData/recommendations.json')
 
           }
           else if(vegan == null && vegetarian == null && glutenFree == null) {
-            
+
           }
           else {
             foodItem.style.display = 'None';
@@ -184,5 +184,3 @@ fetch('../siteData/recommendations.json')
       })
     });
   };
-
-  document.getElementById('submitBtn').addEventListener('click', filterFood);
