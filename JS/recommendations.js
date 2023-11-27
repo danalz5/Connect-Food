@@ -132,7 +132,7 @@ fetch('../siteData/recommendations.json')
       pLevel = 20
     }
     else if(expensive == "true") {
-      pLevel = 30
+      pLevel = 9999
     }
     console.log(pLevel);
 
@@ -182,4 +182,4 @@ fetch('../siteData/recommendations.json')
     });
   };
 
-  //document.getElementById('recButton').addEventListener('click', filterFood);
+  document.getElementById('submitBtn').addEventListener('click', filterFood);
