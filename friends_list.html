@@ -10,13 +10,24 @@
   </head>
   <body>
     <main>
-        <h1 id="friendList">Friends List</h1>
+      <div id="head">
         <button onclick="window.location.href = 'index.html';">
-          <img src="https://www.rawshorts.com/freeicons/wp-content/uploads/2017/01/blue_repicthousebase_1484336386-1.png" width="20px" height="20px"/>
+          <img src="/Images/home.png" width="20px" height="20px"/>
+        </button>
+        <button onclick="window.location.href = 'recommendations.html';">
+          <img src="/Images/thumbs.png" width="20px" height="20px"/>
+        </button>
+        <button onclick="window.location.href = 'recipes.html';">
+          <img src="/Images/chefs_hat.png" width="20px" height="20px"/>
+        </button>
+        <button id="disabledButton">
+          <img src="/Images/people.png" width="20px" height="20px"/>
         </button>
         <button onclick="window.location.href = 'profile.html';">
-          <img src="Images/user.png" width="20px" height="20px"/>
+          <img src="/Images/user.png" width="20px" height="20px"/>
         </button>
+      </div>
+        <h1 id="friendList">Friends List</h1>
         <section id="friendList"></section>
         <div id="friend">
           <div style="display: inline-block; position:relative; top:10px">

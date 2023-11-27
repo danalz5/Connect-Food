@@ -13,6 +13,7 @@ h1 {
     font-family: 'Montserrat', sans-serif;
 }
 
+
 #recTitle {
     font-family: 'Pacifico', sans-serif; 
 }
@@ -40,7 +41,7 @@ input[type='text'] {
     border-radius: 15px;
 }
 
-img {
+#recList img {
     padding: 10px;
     border-radius: 25px;
     display: inline-block;
@@ -57,4 +58,38 @@ img {
 #title {
     padding: 10px;
     display: inline-block;
+}
+
+#head {
+    margin-top: 1%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1%;
+}
+
+#head button{
+    width: 50px;
+    height: 50px;
+    background-color: lightblue;
+    transition: ease-in-out 0.2s;
+    margin: 5px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#head button:hover{
+    transform: scale(1.05);
+}
+
+#head button:active {
+    background-color: rgb(126, 185, 206);
+}
+
+#head #disabledButton{
+    background-color: antiquewhite;
+    pointer-events: none;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }

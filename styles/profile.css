@@ -36,6 +36,12 @@ h1 {
     background-color: rgb(126, 185, 206);
 }
 
+#head #disabledButton{
+    background-color: antiquewhite;
+    pointer-events: none;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
 #pfp {
     border-radius: 50%;
     width: 400px;
