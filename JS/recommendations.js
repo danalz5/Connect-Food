@@ -1,5 +1,7 @@
 const recList = document.getElementById('recList');
 
+var divList = [];
+
 fetch('../siteData/recommendations.json')
   .then(response => response.json()) // Parse the response as JSON
   .then(data => {
@@ -53,32 +55,6 @@ fetch('../siteData/recommendations.json')
                     desc.appendChild(detail);
                     reviewDiv.appendChild(desc);
                 }
-                else if(prop == "Spice Level") {
-                  var mild = localStorage.getItem('mild');
-                  var moderate = localStorage.getItem('moderate');
-                  var spicy = localStorage.getItem('spicy');
-                  
-                  var sLevel;
-                  if(mild) {
-                    sLevel = "Mild"
-                  }
-                  else if(moderate) {
-                    sLevel = "Moderate"
-                  }
-                  else if(spicy) {
-                    sLevel = "Spicy"
-                  }
-
-                  if(sLevel != value[prop]) {
-                    foodSection.style.display = 'none';
-                  }
-                  else {
-                    const desc = document.createElement("p");
-                    const detail = document.createTextNode(`${prop}: ${value[prop]}`);
-                    desc.appendChild(detail);
-                    newDiv.appendChild(desc);
-                  }
-                }
                 else {
                     const desc = document.createElement("p");
                     const detail = document.createTextNode(`${prop}: ${value[prop]}`);
@@ -111,10 +87,51 @@ fetch('../siteData/recommendations.json')
 
         foodSection.appendChild(newDiv);
         foodSection.appendChild(reviewDiv);
+        divList.push(foodSection);
         recList.appendChild(foodSection);
       }
     }
+
+    filterFood();
   })
   .catch(error => {
     console.error('Error fetching or parsing JSON data:', error);
   });
+
+  
+
+  function filterFood() {
+    var mild = localStorage.getItem('mild');
+    console.log(mild);
+    var moderate = localStorage.getItem('moderate');
+    console.log(moderate);
+    var spicy = localStorage.getItem('spicy');
+    console.log(spicy);
+
+    var sLevel = "none";
+    if(mild == "true") {
+      sLevel = "Mild"
+    }
+    else if(moderate == "true") {
+      sLevel = "Moderate"
+    }
+    else if(spicy == "true") {
+      sLevel = "Spicy"
+    }
+    console.log(sLevel);
+
+    divList.forEach(function(foodItem) {
+      var foodText = foodItem.querySelectorAll('p');
+      foodText.forEach(function(text) {
+        if(text.textContent.startsWith("Spice Level:")) {
+          var content = text.textContent.split(':')
+          var level = content[1].trim();
+          if(sLevel < level) {
+            foodItem.style.display = 'None';
+          }
+        }
+      })
+    });
+  };
+
+  document.getElementById('recButton').addEventListener('click', filterFood);
