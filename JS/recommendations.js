@@ -160,7 +160,7 @@ fetch('../siteData/recommendations.json')
         else if(text.textContent.startsWith("Dietary:")) {
           var content = text.textContent.split(':')
           var pref = content[1].trim();
-          console.log(pref);
+          //console.log(pref);
 
           if(pref == "Gluten-Free" && glutenFree == "true") {
 
@@ -173,6 +173,9 @@ fetch('../siteData/recommendations.json')
           }
           else if(vegan == "false" && vegetarian == "false" && glutenFree == "false") {
 
+          }
+          else if(vegan == null && vegetarian == null && glutenFree == null) {
+            
           }
           else {
             foodItem.style.display = 'None';
