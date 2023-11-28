@@ -29,6 +29,14 @@
       </div>
         <h1 id="friendList">Friends List</h1>
         <section id="friendList"></section>
+        <div id="addFriend">
+          <form>
+            <h2 style="margin: 10px;">Add a Friend!</h2>
+            <input type="text" id="username" placeholder="Enter a username..." style="margin: 10px" onkeydown="checkEnter(event)"/>
+            <br/>
+            <button onclick="checkButtonClick()" style="margin: 10px">Add Friend</button>
+          </form>
+        </div>
         <div id="friend1">
           <div style="position:relative; top:10px">
             <img src="https://img.freepik.com/premium-photo/puppy-samoyed-dog_87557-14008.jpg" alt="Tomas pfp" width="100" height="75">
@@ -64,14 +72,6 @@
             <p style="position:relative; top:-40px;">My Recipes: Miso Soup, Veggie Tacos</p>
             <p style="position:relative; top:-30px;">My Food Recommendations: Panang Curry from Oppart Thai</p>
           </div>
-        </div>
-        <div id="addFriend">
-          <form>
-            <h2 style="margin: 10px;">Add a Friend!</h2>
-            <input type="text" id="username" placeholder="Enter a username..." style="margin: 10px" onkeydown="checkEnter(event)"/>
-            <br/>
-            <button onclick="checkButtonClick()" style="margin: 10px">Add Friend</button>
-          </form>
         </div>
     </main>
 	<script type="module" src="JS/friends_list.js"></script>
