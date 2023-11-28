@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    background: #fff;
+    background: antiquewhite;
     color: #333;
     line-height: 1.4;
 }
@@ -22,21 +22,28 @@ body {
 /* Recipe image and title */
 #recipe-image {
     display: block;
-    width: 100%;
+    width: 50%;
     height: auto;
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
+    margin-top: 20px;
 }
 
 #recipe-title {
     font-size: 2em;
     margin-bottom: 10px;
-    color: #e67e22; /* Change color to match your exact design */
+    color: lightskyblue;
 }
 
-/* Rating stars - placeholder since the actual implementation may vary */
-.rating-stars {
-    color: #e67e22; /* Star rating color */
-    margin-bottom: 20px;
+.recipe-title-description {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#recipe-description {
+    font-size: 1.2em;
+    margin-left: 20px;
+    color: #333;
 }
 
 /* Recipe metadata */
@@ -55,7 +62,7 @@ body {
 h3 {
     font-size: 1.2em;
     color: #333;
-    border-bottom: 2px solid #e67e22; /* Match color to design */
+    border-bottom: 2px solid lightblue;
     padding-bottom: 5px;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -68,8 +75,8 @@ ul {
 }
 
 ul li {
-    background: #f9f9f9; /* Light grey background for each list item */
-    border-left: 4px solid #e67e22; /* Left border color */
+    background: #f9f9f9;
+    border-left: 4px solid lightblue;
     padding: 10px;
     margin-bottom: 8px;
 }
@@ -86,12 +93,6 @@ ol li {
     text-indent: -10px;
 }
 
-ol li:before {
-    counter-increment: step-counter;
-    content: counter(step-counter) ". ";
-    font-weight: bold;
-}
-
 /* Notes */
 .notes {
     font-style: italic;
@@ -104,7 +105,7 @@ ol li:before {
     font-size: 0.9em;
 }
 
-/*Metadata */
+/* Metadata */
 .author, .prep-time, .cook-time, .total-time {
     font-weight: bold;
 }

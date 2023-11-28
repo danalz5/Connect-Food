@@ -2,38 +2,128 @@
   "Lemon Cream Pie": {
     "Description": "The combination of lemon and sour cream give this pie a smooth texture and tangy taste.  Just perfect with the graham cracker crust.",
     "Equipment": "Equipment\nPie Plate (9in)\nMeasuring Cups\nMeasuring Spoons",
-    "Ingredients": "Pie Filling\n1 cup Sugar\n3 Tbsp cornstarch plus 1-1/2 tsp\n1 Tbsp grated lemon peel\n1/2 cup lemon juice\n3 egg yolks lightly beaten\n1 cup milk\n1/4 cup butter cubed\n8 oz sour cream\n1 cup heavy whipping cream whipped\n* Lemon twists for garnish\nGraham Cracker Crust\n1 1/4 cup graham cracker crumbs\n5 Tbsp butter melted\n2 Tbsp sugar\n",
-    "Steps": "Pie Filling\nCombine sugar, cornstarch, lemon peel, juice, egg yolks and milk in heavy saucepan\nCook over medium heat until thickened. Stir in butter\nCool mixture to room temperature and add in sour cream\nPour into Graham Cracker Crust\nTop with Whipped Cream and garnish as desired.\nRefrigerate until ready to serve\nGraham cracker crust\nMix together graham cracker crumbs, melted butter and sugar with a fork\nPour the crumbs into a pie plate\nUse your measuring cup to press crumbs into bottom and sides of pie plate\nBake at 325 until the crust begins to brown - about 15-20 minutes\nAllow to cool and keep stored in refrigeator\nNotes\nIf you prefer, you can use a pastry crust instead of a graham cracker crust. Use my recipe for the perfect pie crust found here.\nIf using a graham cracker curst, use your measuring cup to press the crumbs into the bottom and sides of the pie pan to get a nice smooth, even crust!",
+    "Ingredients": "Pie Filling\n1 cup Sugar\n3 Tbsp cornstarch plus 1-1/2 tsp\n1 Tbsp grated lemon peel\n1/2 cup lemon juice\n3 egg yolks lightly beaten\n1 cup milk\n1/4 cup butter cubed\n8 oz sour cream\n1 cup heavy whipping cream whipped\n* Lemon twists for garnish\nGraham Cracker Crust\n1 1/4 cup graham cracker crumbs\n5 Tbsp butter melted\n2 Tbsp sugar",
+    "Steps": "Pie Filling\nCombine sugar, cornstarch, lemon peel, juice, egg yolks and milk in heavy saucepan\nCook over medium heat until thickened. Stir in butter\nCool mixture to room temperature and add in sour cream\nPour into Graham Cracker Crust\nTop with Whipped Cream and garnish as desired.\nRefrigerate until ready to serve\nGraham cracker crust\nMix together graham cracker crumbs, melted butter and sugar with a fork\nPour the crumbs into a pie plate\nUse your measuring cup to press crumbs into bottom and sides of pie plate\nBake at 325 until the crust begins to brown - about 15-20 minutes\nAllow to cool and keep stored in refrigerator\nNotes\nIf you prefer, you can use a pastry crust instead of a graham cracker crust. Use my recipe for the perfect pie crust found here.\nIf using a graham cracker crust, use your measuring cup to press the crumbs into the bottom and sides of the pie pan to get a nice smooth, even crust!",
     "Nutrition": "Calories: 523kcal | Carbohydrates: 47g | Protein: 4g | Fat: 35g | Saturated Fat: 20g | Cholesterol: 166mg | Sodium: 266mg | Potassium: 148mg | Sugar: 33g | Vitamin A: 1160IU | Vitamin C: 7.3mg | Calcium: 108mg | Iron: 0.9mg",
     "Dietary Restriction": "Vegetarian, Gluten-Free",
-    "Spice Level": "",
+    "Spice Level": "N/A",
     "Price Range": "expensive",
-    "Image": "Images/lemon_cream_pie.jpg"
+    "Image": "Images/lemon_cream_pie.jpg",
+    "posted-by": "Daniel"
   },
 
   "Orange Chicken": {
-    "Description": "Delicious orange chicken, just like the dish served at your favorite take out restaurant.\n",
-    "Equipment": "Juicer\nMicroplane\nMeasuring Cups",
-    "Ingredients": "Chicken\n2 lbs boneless skinless chicken breasts cut into 1-1/2” cubes\n1 ½ cups all purpose flour\n1 eggs beaten\n¼ tsp salt\n¼ tsp pepper\nOil for frying\nOrange Sauce\n1 ½ cups water\n2 Tbsps orange juice\n¼ cup lemon juice\n1/3 cup rice vinegar\n2 ½ Tbsp soy sauce\n1 Tbsp orange zest grated\n1 Cup brown sugar packed\n½ tsp ginger root minced\n½ tsp garlic minced\n2 Tbsp green onion chopped\n¼ tsp red pepper flakes\n3 Tbsp cornstarch\n2 Tbsp water\n",
-    "Steps": "Combine flour, salt, and pepper.\nDip chicken in egg mixture and shake in flour mixture to coat.\nDeep fry chicken in batches at 375 degrees in a deep fryer (or use a wok) until completely cooked.\nMeanwhile, in a large saucepan combine 1 ½ cups water, lemon juice, orange juice, rice vinegar, and soy sauce.\nBlend well over medium heat for a few minutes.\nStir in brown sugar, orange zest, ginger garlic, and onion. Bring to a boil.\nCombine 3 tablespoons of cornstarch with 1/4 cup of water and mix thoroughly.\nSlowly stir cornstarch mixture into sauce until it thickens.\nPour sauce over breaded chicken, and if desired add red pepper flakes and garnish with green onions\n",
+    "Description": "Delicious orange chicken, just like the dish served at your favorite take out restaurant.",
+    "Equipment": "Equipment\nJuicer\nMicroplane\nMeasuring Cups",
+    "Ingredients": "Chicken\n2 lbs boneless skinless chicken breasts cut into 1-1/2” cubes\n1 ½ cups all purpose flour\n1 eggs beaten\n¼ tsp salt\n¼ tsp pepper\nOil for frying\nOrange Sauce\n1 ½ cups water\n2 Tbsps orange juice\n¼ cup lemon juice\n1/3 cup rice vinegar\n2 ½ Tbsp soy sauce\n1 Tbsp orange zest grated\n1 Cup brown sugar packed\n½ tsp ginger root minced\n½ tsp garlic minced\n2 Tbsp green onion chopped\n¼ tsp red pepper flakes\n3 Tbsp cornstarch\n2 Tbsp water",
+    "Steps": "Combine flour, salt, and pepper.\nDip chicken in egg mixture and shake in flour mixture to coat.\nDeep fry chicken in batches at 375 degrees in a deep fryer (or use a wok) until completely cooked.\nMeanwhile, in a large saucepan combine 1 ½ cups water, lemon juice, orange juice, rice vinegar, and soy sauce.\nBlend well over medium heat for a few minutes.\nStir in brown sugar, orange zest, ginger garlic, and onion. Bring to a boil.\nCombine 3 tablespoons of cornstarch with 1/4 cup of water and mix thoroughly.\nSlowly stir cornstarch mixture into sauce until it thickens.\nPour sauce over breaded chicken, and if desired add red pepper flakes and garnish with green onions",
     "Nutrition": "Calories: 465kcal | Carbohydrates: 65g | Protein: 37g | Fat: 4g | Saturated Fat: 1g | Cholesterol: 124mg | Sodium: 718mg | Potassium: 689mg | Fiber: 1g | Sugar: 36g | Vitamin A: 140IU | Vitamin C: 10.3mg | Calcium: 49mg | Iron: 2.6mg",
-    "Dietary Restriction": "",
+    "Dietary Restriction": "N/A",
     "Spice Level": "Mild",
     "Price Range": "affordable",
-    "Image": "Images/orange_chicken.jpg"
+    "Image": "Images/orange_chicken.jpg",
+    "posted-by": "Drew"
 
   },
 
 
   "California Sushi Rolls": {
     "Description": "A classic sushi roll filled with fresh avocado, cucumber, and crab meat.",
-    "Equipment": "Seaweed Sheets\nGreen Bamboo Sushi Roller Mat\nNatural Bamboo Sushi Mat\nRice Paddle, Spreader ",
+    "Equipment": "Equipment\nSeaweed Sheets\nGreen Bamboo Sushi Roller Mat\nNatural Bamboo Sushi Mat\nRice Paddle, Spreader ",
     "Ingredients": "1 ½ cups sushi rice\n2 ¼ cups water\n2 tablespoons seasoned rice vinegar\n1 teaspoon salt\n1 teaspoon sugar\n1 avocado\n½ English cucumber\n8 ounces imitation crab, log/leg style works better than chunks\n4 sheets toasted nori seaweed",
-    "Steps": "Rinse off the rice in a colander. In a pot with a lid add the rice and the water. Turn heat to high and bring to a boil. Once boiling keep the lid on and reduce to low for 15 minutes until all the water has been absorbed. While the rice is cooking in a small bowl add the rice vinegar, sugar, and salt. Whisk together until the sugar and salt are dissolved into the vinegar.\nOnce the rice is ready carefully transfer the rice to a sheet pan. Sprinkle the rice vinegar mixture over the rice and toss the rice in the vinegar to coat as much of it as possible. Now spread the rice out over the whole sheet pan making an even thin layer of rice to cool it down. Wait 10 minutes before rolling the sushi.\nWhile the rice is cooking and cooling prepare the vegetables for filling. Thinly slice the avocado. Peel and cut the cucumber in half and use a spoon to remove the seeds, then continue to cut the cucumber into long thin strips.\nWhile you finish waiting for the rice to cool set up your work station for rolling. You will need a sushi mat, a scoop and 1 cup measuring cup for the rice, a small bowl of room temperature water for your fingers, and a serated knife. Note to keep the water close, keeping your hands wet will keep the rice from sticking to you during the process.\nOnce rice is ready measure it out into a 1 cup measuring cup, you will use 1 cup of rice for each roll. Now take a sheet of seaweed and lay the shinier side down on the sushi mat, keep in the center with the bottom flush against the edge of the mat. Dip your fingers in the bowl of water letting excess water drip off. Transfer the cup of rice onto the center of the seaweed. Now with your wet fingers (you can dip them in more water if needed) spread out the rice to the flush bottom, sides, and up to the top of the seaweed until about the last inch, leave a narrow strip of seaweed uncovered at the top, about 1 inch.\nOnce rice is spread out in the center add a line of the avocado, crab, and cucumber.\nNow carefully take the flush edge of the mat and fold it up over the fillings. Then pulling the mat tightly over the fillings creating the center of the roll. Pull down the mat off the seaweed and roll the rest of the roll up to create a lof shape. Bring the mat back overtop of the log and up the log into the mat. Pick it up and gently give the whole thing a squeeze to keep it in a circular shape. Now unwrap the mat and you should have a california roll!\nDip the serated knife into the water bowl (like with your fingers to keep it from sticking). And carefully cut the sushi into 8 pieces.",
+    "Steps": "Rinse off the rice in a colander. In a pot with a lid add the rice and the water. Turn heat to high and bring to a boil. Once boiling keep the lid on and reduce to low for 15 minutes until all the water has been absorbed. While the rice is cooking in a small bowl add the rice vinegar, sugar, and salt. Whisk together until the sugar and salt are dissolved into the vinegar.\nOnce the rice is ready carefully transfer the rice to a sheet pan. Sprinkle the rice vinegar mixture over the rice and toss the rice in the vinegar to coat as much of it as possible. Now spread the rice out over the whole sheet pan making an even thin layer of rice to cool it down. Wait 10 minutes before rolling the sushi.\nWhile the rice is cooking and cooling prepare the vegetables for filling. Thinly slice the avocado. Peel and cut the cucumber in half and use a spoon to remove the seeds, then continue to cut the cucumber into long thin strips.\nWhile you finish waiting for the rice to cool set up your work station for rolling. You will need a sushi mat, a scoop and 1 cup measuring cup for the rice, a small bowl of room temperature water for your fingers, and a serated knife. Note to keep the water close, keeping your hands wet will keep the rice from sticking to you during the process.\nOnce rice is ready measure it out into a 1 cup measuring cup, you will use 1 cup of rice for each roll. Now take a sheet of seaweed and lay the shinier side down on the sushi mat, keep in the center with the bottom flush against the edge of the mat. Dip your fingers in the bowl of water letting excess water drip off. Transfer the cup of rice onto the center of the seaweed. Now with your wet fingers (you can dip them in more water if needed) spread out the rice to the flush bottom, sides, and up to the top of the seaweed until about the last inch, leave a narrow strip of seaweed uncovered at the top, about 1 inch.\nOnce rice is spread out in the center add a line of the avocado, crab, and cucumber.\nNow carefully take the flush edge of the mat and fold it up over the fillings. Then pulling the mat tightly over the fillings creating the center of the roll. Pull down the mat off the seaweed and roll the rest of the roll up to create a log shape. Bring the mat back overtop of the log and up the log into the mat. Pick it up and gently give the whole thing a squeeze to keep it in a circular shape. Now unwrap the mat and you should have a california roll!\nDip the serated knife into the water bowl (like with your fingers to keep it from sticking). And carefully cut the sushi into 8 pieces.",
     "Nutrition": "Calories: 140kcal | Carbohydrates: 27g | Protein: 5g | Fat: 1g | Saturated Fat: 0g | Cholesterol: 6mg | Sodium: 642mg | Potassium: 71mg | Fiber: 1g | Sugar: 3.2g | Vitamin A: 6mcg | Vitamin C: 1.4mg | Calcium: 9mg | Iron: 0.3mg",
-    "Dietary Restriction": "",
-    "Spice Level": "",
+    "Dietary Restriction": "N/A",
+    "Spice Level": "N/A",
     "Price Range": "cheap",
-    "Image": "Images/california_sushi_rolls.jpg"
+    "Image": "Images/california_sushi_rolls.jpg",
+    "posted-by": "Teressa"
+  },
+
+  "Classic Chocolate Cake": {
+    "Description": "Indulge in the rich and decadent taste of this classic chocolate cake. Perfect for any celebration.",
+    "Equipment": "Equipment\nTwo 9-inch round cake pans\nMixing bowls\nElectric mixer\nSpatula",
+    "Ingredients": "Cake\n2 cups all-purpose flour\n1 ¾ cups granulated sugar\n¾ cup unsweetened cocoa powder\n1 ½ tsp baking powder\n1 ½ tsp baking soda\n1 tsp salt\n2 large eggs\n1 cup whole milk\n½ cup vegetable oil\n2 tsp vanilla extract\n1 cup boiling water\nChocolate Frosting\n1 cup unsalted butter, softened\n1 ½ cups unsweetened cocoa powder\n5 cups powdered sugar\n½ cup whole milk\n2 tsp vanilla extract\nPinch of salt",
+    "Steps": "Cake\nPreheat oven to 350°F (175°C). Grease and flour two 9-inch round cake pans.\nIn a large mixing bowl, sift together flour, sugar, cocoa powder, baking powder, baking soda, and salt.\nAdd eggs, milk, vegetable oil, and vanilla extract. Beat with an electric mixer on medium speed for 2 minutes.\nStir in boiling water until the batter is well combined. The batter will be thin; this is okay.\nPour the batter evenly into the prepared pans.\nBake in the preheated oven for 30 to 35 minutes, or until a toothpick inserted into the center comes out clean.\nRemove from the oven and let the cakes cool in the pans for 10 minutes. Then, remove the cakes from the pans and let them cool completely on a wire rack.\nChocolate Frosting\nIn a large mixing bowl, beat the softened butter until smooth and creamy.\nGradually add cocoa powder and powdered sugar, alternating with milk and vanilla extract. Beat until the frosting is creamy and fluffy.\nAdd a pinch of salt and mix until well combined.\nFrost the cooled chocolate cakes with the chocolate frosting. You can also add some chocolate shavings or sprinkles for decoration.\nSlice and serve.",
+    "Nutrition": "Calories: 450kcal | Carbohydrates: 75g | Protein: 5g | Fat: 16g | Saturated Fat: 9g | Cholesterol: 45mg | Sodium: 400mg | Potassium: 230mg | Fiber: 5g | Sugar: 56g | Vitamin A: 350IU | Calcium: 60mg | Iron: 2.5mg",
+    "Dietary Restriction": "N/A",
+    "Spice Level": "N/A",
+    "Price Range": "moderate",
+    "Image": "Images/classic_chocolate_cake.jpg",
+    "posted-by": "Daniel"
+  },
+  "Vegetable Stir-Fry": {
+    "Description": "A healthy and colorful vegetable stir-fry that's quick and easy to make. Packed with flavor and nutrients.",
+    "Equipment": "Equipment\nWok or large skillet\nCutting board\nKnife",
+    "Ingredients": "Stir-Fry Sauce\n3 tablespoons soy sauce\n2 tablespoons rice vinegar\n1 tablespoon honey\n1 teaspoon cornstarch\nStir-Fry\n2 tablespoons vegetable oil\n1 red bell pepper, sliced\n1 yellow bell pepper, sliced\n1 green bell pepper, sliced\n1 cup broccoli florets\n1 cup snow peas\n1 carrot, sliced\n1 zucchini, sliced\n2 cloves garlic, minced\n1 tablespoon fresh ginger, minced\n1 pound tofu, cubed (optional)\nCooked rice or noodles for serving",
+    "Steps": "Stir-Fry Sauce\nIn a small bowl, whisk together soy sauce, rice vinegar, honey, and cornstarch. Set aside.\nStir-Fry\nHeat vegetable oil in a wok or large skillet over high heat.\nAdd minced garlic and ginger, and stir-fry for about 30 seconds until fragrant.\nAdd tofu cubes (if using) and stir-fry until lightly browned.\nAdd all the sliced vegetables (bell peppers, broccoli, snow peas, carrot, zucchini) and stir-fry for about 3-5 minutes until they start to become tender but still crisp.\nPour in the stir-fry sauce and stir to coat the vegetables and tofu evenly. Continue to cook for another 2-3 minutes until the sauce thickens.\nServe the vegetable stir-fry over cooked rice or noodles.\nEnjoy your colorful and healthy meal!",
+    "Nutrition": "Calories: 250kcal | Carbohydrates: 20g | Protein: 10g | Fat: 15g | Saturated Fat: 2g | Cholesterol: 0mg | Sodium: 350mg | Potassium: 450mg | Fiber: 5g | Sugar: 10g | Vitamin A: 120% | Vitamin C: 200% | Calcium: 10% | Iron: 15%",
+    "Dietary Restriction": "Vegetarian, Vegan",
+    "Spice Level": "Mild",
+    "Price Range": "affordable",
+    "Image": "Images/vegetable_stir-fry.jpg",
+    "posted-by": "Teressa"
+  },
+  "Spaghetti Bolognese": {
+    "Description": "A classic Italian pasta dish featuring rich and savory Bolognese sauce served over perfectly cooked spaghetti.",
+    "Equipment": "Equipment\nLarge saucepan\nSkillet\nLarge pot\nColander\nServing platter",
+    "Ingredients": "Bolognese Sauce\n1 lb ground beef\n1 onion, chopped\n2 cloves garlic, minced\n1 carrot, finely chopped\n1 celery stalk, finely chopped\n1 can (28 oz) crushed tomatoes\n1/2 cup red wine (optional)\n2 tbsp tomato paste\n1 tsp dried oregano\n1 tsp dried basil\nSalt and pepper to taste\nSpaghetti\n12 oz spaghetti\nGrated Parmesan cheese for serving\nFresh basil leaves for garnish",
+    "Steps": "Bolognese Sauce\nIn a large skillet, brown the ground beef over medium-high heat. Remove any excess fat.\nIn a large saucepan, heat olive oil over medium heat. Add chopped onion, garlic, carrot, and celery. Sauté until softened, about 5 minutes.\nAdd the cooked ground beef to the saucepan, along with crushed tomatoes, red wine (if using), tomato paste, dried oregano, dried basil, salt, and pepper. Stir well to combine.\nSimmer the sauce over low heat for at least 30 minutes, stirring occasionally. The longer you simmer, the richer the flavor.\nSpaghetti\nIn a large pot, cook the spaghetti according to package instructions until al dente. Drain in a colander.\nServe the Bolognese sauce over cooked spaghetti.\nGarnish with grated Parmesan cheese and fresh basil leaves.\nEnjoy your homemade Spaghetti Bolognese!",
+    "Nutrition": "Calories: 500kcal | Carbohydrates: 45g | Protein: 25g | Fat: 22g | Saturated Fat: 8g | Cholesterol: 65mg | Sodium: 700mg | Potassium: 800mg | Fiber: 6g | Sugar: 8g | Vitamin A: 70% | Vitamin C: 20% | Calcium: 8% | Iron: 25%",
+    "Dietary Restriction": "N/A",
+    "Spice Level": "Mild",
+    "Price Range": "moderate",
+    "Image": "Images/spaghetti_bolognese.jpg",
+    "posted-by": "Drew"
+  },
+  "Mango Salsa": {
+    "Description": "A refreshing and tropical salsa featuring ripe mangoes, red onions, cilantro, and a hint of lime juice.",
+    "Equipment": "Equipment\nMixing bowl\nKnife\nCutting board",
+    "Ingredients": "2 ripe mangoes, diced\n1/2 red onion, finely chopped\n1/2 cup fresh cilantro, chopped\n1 jalapeño pepper, seeded and minced (optional)\nJuice of 1 lime\nSalt and pepper to taste\nTortilla chips for serving",
+    "Steps": "In a mixing bowl, combine diced mangoes, finely chopped red onion, chopped cilantro, and minced jalapeño pepper (if using).\nSqueeze the juice of 1 lime over the mixture.\nSeason with salt and pepper to taste. Toss everything together.\nChill the mango salsa in the refrigerator for at least 30 minutes to let the flavors meld.\nServe with tortilla chips or as a topping for grilled chicken or fish.\nEnjoy the tropical flavors of Mango Salsa!",
+    "Nutrition": "Calories: 60kcal | Carbohydrates: 15g | Protein: 1g | Fat: 0g | Saturated Fat: 0g | Cholesterol: 0mg | Sodium: 5mg | Potassium: 170mg | Fiber: 2g | Sugar: 11g | Vitamin A: 25% | Vitamin C: 60% | Calcium: 2% | Iron: 2%",
+    "Dietary Restriction": "Vegetarian, Vegan",
+    "Spice Level": "Mild",
+    "Price Range": "cheap",
+    "Image": "Images/mango_salsa.jpg",
+    "posted-by": "Teressa"
+  },
+  "Chicken Alfredo": {
+    "Description": "Creamy and indulgent Chicken Alfredo pasta with tender chicken breast and fettuccine noodles in a rich Alfredo sauce.",
+    "Equipment": "Equipment\nLarge skillet\nLarge pot\nColander\nServing platter",
+    "Ingredients": "Chicken\n2 boneless, skinless chicken breasts\nSalt and pepper to taste\n1 tbsp olive oil\nFettuccine Alfredo\n8 oz fettuccine pasta\n2 cups heavy cream\n1/2 cup unsalted butter\n1 1/2 cups grated Parmesan cheese\nSalt and pepper to taste\nChopped fresh parsley for garnish",
+    "Steps": "Chicken\nSeason chicken breasts with salt and pepper.\nIn a large skillet, heat olive oil over medium-high heat. Add chicken breasts and cook until golden brown and cooked through, about 6-7 minutes per side. Remove from skillet and let rest.\nFettuccine Alfredo\nIn a large pot, cook fettuccine pasta according to package instructions until al dente. Drain in a colander.\nIn the same skillet used for chicken, melt butter over medium heat. Stir in heavy cream and bring to a simmer. Cook for 2-3 minutes until slightly thickened.\nAdd grated Parmesan cheese and stir until the sauce is smooth and creamy. Season with salt and pepper to taste.\nSlice cooked chicken into strips and add to the Alfredo sauce. Stir to combine.\nServe the Chicken Alfredo over cooked fettuccine pasta. Garnish with chopped fresh parsley.\nIndulge in the creamy goodness of Chicken Alfredo!",
+    "Nutrition": "Calories: 750kcal | Carbohydrates: 38g | Protein: 35g | Fat: 52g | Saturated Fat: 30g | Cholesterol: 240mg | Sodium: 700mg | Potassium: 450mg | Fiber: 2g | Sugar: 3g | Vitamin A: 160% | Vitamin C: 2% | Calcium: 50% | Iron: 2%",
+    "Dietary Restriction": "N/A",
+    "Spice Level": "Mild",
+    "Price Range": "moderate",
+    "Image": "Images/chicken_alfredo.jpg",
+    "posted-by": "Daniel"
+  },
+  "Greek Salad": {
+    "Description": "A fresh and vibrant Greek salad featuring crisp cucumbers, juicy tomatoes, tangy olives, and creamy feta cheese.",
+    "Equipment": "Equipment\nMixing bowl\nKnife\nCutting board",
+    "Ingredients": "Salad\n2 cucumbers, diced\n4 tomatoes, diced\n1 red onion, thinly sliced\n1 cup Kalamata olives, pitted\n1 cup feta cheese, crumbled\nFresh oregano leaves for garnish (optional)\nGreek Dressing\n1/4 cup extra-virgin olive oil\n2 tbsp red wine vinegar\n1 tsp dried oregano\nSalt and pepper to taste",
+    "Steps": "Salad\nIn a mixing bowl, combine diced cucumbers, diced tomatoes, thinly sliced red onion, pitted Kalamata olives, and crumbled feta cheese.\nToss the salad ingredients together until well combined.\nGreek Dressing\nIn a small bowl, whisk together extra-virgin olive oil, red wine vinegar, dried oregano, salt, and pepper.\nPour the Greek dressing over the salad and toss to coat all the ingredients.\nGarnish with fresh oregano leaves (if available).\nServe this refreshing Greek Salad as a side dish or a light meal.",
+    "Nutrition": "Calories: 250kcal | Carbohydrates: 15g | Protein: 7g | Fat: 19g | Saturated Fat: 7g | Cholesterol: 25mg | Sodium: 600mg | Potassium: 350mg | Fiber: 4g | Sugar: 7g | Vitamin A: 15% | Vitamin C: 35% | Calcium: 20% | Iron: 10%",
+    "Dietary Restriction": "Vegetarian",
+    "Spice Level": "Mild",
+    "Price Range": "affordable",
+    "Image": "Images/greek_salad.jpg",
+    "posted-by": "Teressa"
+  },
+
+  "Grilled Salmon": {
+    "Description": "Enjoy the savory flavor of grilled salmon with a hint of lemon. A healthy and delicious meal.",
+    "Equipment": "Equipment\nGrill\nTongs\nBasting brush",
+    "Ingredients": "Salmon\n4 salmon fillets\n2 tablespoons olive oil\n1 lemon, sliced\nSalt and pepper to taste\nMarinade\n1/4 cup olive oil\n2 tablespoons lemon juice\n2 cloves garlic, minced\n1 teaspoon dried oregano\n1 teaspoon dried thyme\n1 teaspoon paprika\nSalt and pepper to taste",
+    "Steps": "Marinade\nIn a small bowl, whisk together olive oil, lemon juice, minced garlic, dried oregano, dried thyme, paprika, salt, and pepper.\nPlace the salmon fillets in a shallow dish and pour the marinade over them. Cover and refrigerate for at least 30 minutes to marinate.\nGrilled Salmon\nPreheat the grill to medium-high heat.\nRemove the salmon fillets from the marinade and season with salt and pepper.\nPlace the salmon fillets on the grill and cook for about 4-5 minutes per side, or until the salmon flakes easily with a fork and has grill marks.\nDuring grilling, baste the salmon with the remaining marinade and add lemon slices for extra flavor.\nServe the grilled salmon with your choice of sides and enjoy!",
+    "Nutrition": "Calories: 300kcal | Carbohydrates: 3g | Protein: 25g | Fat: 20g | Saturated Fat: 3g | Cholesterol: 70mg | Sodium: 150mg | Potassium: 650mg | Fiber: 1g | Sugar: 1g | Vitamin A: 6% | Vitamin C: 15% | Calcium: 2% | Iron: 6%",
+    "Dietary Restriction": "N/A",
+    "Spice Level": "N/A",
+    "Price Range": "moderate",
+    "Image": "Images/grilled_salmon.jpg",
+    "posted-by": "Drew"
   }
 }
+

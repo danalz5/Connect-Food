@@ -62,6 +62,9 @@ document.addEventListener('DOMContentLoaded', function () {
         .then(response => response.json())
         .then(data => {
             recipesData = data;
+            // Display all recipes when the page loads
+            displayAllRecipes(recipesData);
+
             // Add change event listeners to filter elements
             [vegetarianCheckbox, veganCheckbox, glutenFreeCheckbox, mildRadio, moderateRadio, spicyRadio, cheapRadio, affordableRadio, expensiveRadio].forEach(element => {
                 element.addEventListener('change', () => {
@@ -70,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         hardcodedRecipesContainer.style.display = 'none'; // Hide hardcoded recipes
                     } else {
                         dynamicRecipesContainer.innerHTML = '';
-                        hardcodedRecipesContainer.style.display = 'block'; // Show hardcoded recipes
+                        displayAllRecipes(recipesData); // Show all recipes again if no filters are selected
                     }
                 });
             });
@@ -78,6 +81,19 @@ document.addEventListener('DOMContentLoaded', function () {
         .catch(error => {
             console.error('Error fetching recipe data:', error);
         });
+
+    // Function to display all recipes
+    function displayAllRecipes(recipesData) {
+        dynamicRecipesContainer.innerHTML = ''; // Clear any existing content
+
+        for (const recipeName in recipesData) {
+            const recipe = recipesData[recipeName];
+            const recipeCard = createRecipeCard(recipeName, recipe);
+            dynamicRecipesContainer.appendChild(recipeCard);
+        }
+        // Re-initialize heart buttons for dynamic recipe cards
+        initializeHeartButtons();
+    }
 
     // Function to check if any filter is selected
     function isAnyFilterSelected() {
@@ -120,22 +136,28 @@ document.addEventListener('DOMContentLoaded', function () {
         return dietaryMatch && spiceMatch && priceMatch;
     }
 
-    // Function to create a recipe card HTML element
+// Function to create a recipe card HTML element
     function createRecipeCard(recipeName, recipeData) {
         const card = document.createElement('div');
         card.classList.add('recipe-card');
 
+        // Use the image path directly from the JSON data
+        const imagePath = recipeData.Image;
+
         card.innerHTML = `
-            <button class="heart-btn">♡</button>
-            <img src="Images/${recipeName.toLowerCase().replace(/ /g, '_')}.jpg" alt="${recipeName}">
-            <div class="recipe-details">
-              <h3>${recipeName}</h3>
-              <p>${recipeData['Description']}</p>
-              <p>${recipeData['Nutrition']}</p>
-              <button class="recipe-view-btn" type="button" data-recipe="${recipeName}">View Recipe</button>
-            </div>
-        `;
+        <button class="heart-btn">♡</button>
+        <img src="${imagePath}" alt="${recipeName}">
+        <div class="recipe-details">
+          <h3>${recipeName}</h3>
+          <p>${recipeData['Description']}</p>
+          <p>${recipeData['Nutrition']}</p>
+          <button class="recipe-view-btn" type="button" onclick="window.location.href='recipe_detail.html?recipe=${encodeURIComponent(recipeName)}'">View Recipe</button>
+        </div>
+    `;
 
         return card;
     }
+
 });
+
+

@@ -4,71 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Details</title>
-    <!--CSS file here -->
-     <link rel="stylesheet" href="./styles/recipe_detail.css">
+    <link rel="stylesheet" href="./styles/recipe_detail.css">
 </head>
 <body>
+<!-- Container for all recipe details -->
 <div class="recipe-detail-container">
     <h1 id="recipe-title">Recipe Title</h1>
     <p id="recipe-description">Description</p>
     <img id="recipe-image" src="" alt="Recipe Image" style="max-width: 100%; height: auto;">
-    <h3>Equipment Needed</h3>
+    <h3>Dietary Restrictions</h3>
+    <p id="recipe-dietary-restrictions"></p>
+    <h3>Nutrition</h3>
+    <p id="recipe-nutrition"></p>
+    <h3>Equipment</h3>
     <ul id="recipe-equipment"></ul>
     <h3>Ingredients</h3>
     <ul id="recipe-ingredients"></ul>
-    <h3>Preparation Steps</h3>
+    <h3>Steps</h3>
     <ol id="recipe-steps"></ol>
-    <!-- Add more sections for nutrition, dietary restrictions, etc. -->
+    <h3>Posted By</h3>
+    <p id="recipe-posted-by"></p>
 </div>
 
 <script>
+    // Script that will run after the entire DOM is loaded
     document.addEventListener('DOMContentLoaded', function () {
+        // Getting search parameters from the URL
         const params = new URLSearchParams(window.location.search);
+        // Decoding the 'recipe' parameter to get the recipe name
         const recipeName = decodeURIComponent(params.get('recipe'));
 
+        // Fetching recipe data from a JSON file
         fetch('siteData/recipes.json')
-            .then(response => response.json())
+            .then(response => response.json()) // Parsing the JSON file
             .then(data => {
+                // Attempting to retrieve the recipe details using the recipe name
                 const recipe = data[recipeName];
                 if (recipe) {
+                    // If the recipe is found, populate the page with its details
                     document.getElementById('recipe-image').src = recipe.Image;
                     document.getElementById('recipe-image').alt = recipeName + " Image";
                     document.getElementById('recipe-title').textContent = recipeName;
                     document.getElementById('recipe-description').textContent = recipe.Description;
 
-                    const equipmentList = document.getElementById('recipe-equipment');
-                    equipmentList.innerHTML = ''; // Clear existing list items
-                    recipe.Equipment.split('\n').forEach(item => {
-                        const li = document.createElement('li');
-                        li.textContent = item;
-                        equipmentList.appendChild(li);
-                    });
+                    // Calling functions to populate lists for equipment, ingredients, and steps
+                    populateList('recipe-equipment', recipe.Equipment);
+                    populateList('recipe-ingredients', recipe.Ingredients);
+                    populateList('recipe-steps', recipe.Steps, true);
 
-                    const ingredientsList = document.getElementById('recipe-ingredients');
-                    ingredientsList.innerHTML = ''; // Clear existing list items
-                    recipe.Ingredients.split('\n').forEach(item => {
-                        const li = document.createElement('li');
-                        li.textContent = item;
-                        ingredientsList.appendChild(li);
-                    });
-
-                    const stepsList = document.getElementById('recipe-steps');
-                    stepsList.innerHTML = ''; // Clear existing list items
-                    recipe.Steps.split('\n').forEach(item => {
-                        const li = document.createElement('li');
-                        li.textContent = item;
-                        stepsList.appendChild(li);
-                    });
-
-                    // ...similar for other sections...
+                    // Setting text for nutrition and dietary restrictions
+                    document.getElementById('recipe-nutrition').textContent = recipe.Nutrition;
+                    document.getElementById('recipe-dietary-restrictions').textContent = recipe['Dietary Restriction'];
+                    document.getElementById('recipe-posted-by').textContent = recipe['posted-by']; // Setting 'posted-by' information
                 } else {
+                    // If the recipe is not found, show a message
                     document.getElementById('recipe-title').textContent = 'Recipe not found';
                 }
             })
             .catch(error => {
+                // Logging an error if the fetch operation fails
                 console.error('Error fetching recipe data:', error);
             });
     });
+
+    // Function to populate lists with items, used for equipment, ingredients, and steps
+    function populateList(elementId, items, isOrdered = false) {
+        // Getting the DOM element by its ID
+        const listElement = document.getElementById(elementId);
+        listElement.innerHTML = ''; // Clearing existing list items
+
+        // Splitting the items string into individual items and creating a list item for each one
+        items.split('\n').forEach(item => {
+            const listItem = document.createElement('li');
+            listItem.textContent = item;
+            // Appending each list item to the list element
+            listElement.appendChild(listItem);
+        });
+    }
 </script>
 </body>
 </html>
