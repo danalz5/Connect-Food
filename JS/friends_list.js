@@ -83,6 +83,7 @@ fetch('../siteData/friends_list.json')
             }
           });
 
+
         foodSection.appendChild(newDiv);
         foodSection.appendChild(reviewDiv);
         recList.appendChild(foodSection);

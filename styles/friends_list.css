@@ -28,12 +28,31 @@ img {
     vertical-align: middle;
 }
 
-#friend {
+#friend1 {
     background-color: lightblue;
     border-radius: 10px;
     margin: 30px;
     padding: 10px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+#friend2 {
+    background-color: lightblue;
+    border-radius: 10px;
+    margin: 30px;
+    padding: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+#friend3 {
+    background-color: lightblue;
+    border-radius: 10px;
+    margin: 30px;
+    padding: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    display: none;
 }
 
 #addFriend {
