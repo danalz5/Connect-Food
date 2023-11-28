@@ -68,8 +68,6 @@ body {
 
 /* Style the filter button */
 .filter-btn {
-    position: relative;
-    right: 340px;
     padding: 10px 20px;
     background-color: lightblue;
     border-radius: 5px;
@@ -79,11 +77,31 @@ body {
     font-family: 'Montserrat', sans-serif;
     z-index: 10;
     font-weight: bold;
+    right: 500px;
+    /* Remove the right property if it was positioning the button away from the desired location */
 }
 
 /* Hover effect for the filter button */
 .filter-btn:hover {
     transform: scale(1.05);
+}
+
+/* Style for the dropdown menu */
+.filter-btn + .dropdown-menu {
+    display: none; /* Hidden by default */
+    position: absolute; /* Positioned absolutely to the nearest relative parent */
+    left: 0; /* Align to the left edge of the filter button */
+    top: 100%; /* Positioned directly below the filter button */
+    background-color: #f9f9f9;
+    min-width: 160px; /* Set a minimum width for the dropdown */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1000; /* Ensure dropdown is above other content */
+    /* Additional styling for the dropdown menu */
+}
+
+/* Display the dropdown menu when hovering over the filter button */
+.filter-btn:hover + .dropdown-menu {
+    display: block; /* Show the dropdown menu */
 }
 
 /* Header styles (centered text with padding) */
@@ -122,7 +140,7 @@ body {
 #head #disabledButton {
     background-color: antiquewhite;
     pointer-events: none;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Updated styles for recipe cards */
@@ -135,7 +153,7 @@ body {
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Style the recipe card image with responsive sizing and border radius */

@@ -1,40 +1,45 @@
 var list = JSON.parse(localStorage.getItem('liked')) || []; // Initialize the list from local storage or as an empty array
 
 document.addEventListener('DOMContentLoaded', function () {
-    // Select all elements with class 'heart-btn' (heart buttons)
-    var heartButtons = document.querySelectorAll('.heart-btn');
-
-    // Initialize button states based on local storage
-    heartButtons.forEach(function (btn) {
-        var recipeName = btn.closest('.recipe-card').querySelector('h3').textContent;
-        if (list.includes(recipeName)) {
-            btn.classList.add('clicked');
-            btn.textContent = '♥'; // Filled heart
-        }
-    });
-
-    // Add a click event listener to each heart button
-    heartButtons.forEach(function (btn) {
-        btn.addEventListener('click', function () {
-            // Toggle the 'clicked' class to change the heart icon
-            btn.classList.toggle('clicked');
+    // Function to initialize heart button states based on local storage
+    function initializeHeartButtons() {
+        var heartButtons = document.querySelectorAll('.heart-btn');
+        heartButtons.forEach(function (btn) {
             var recipeName = btn.closest('.recipe-card').querySelector('h3').textContent;
-
-            if (btn.classList.contains('clicked')) {
+            if (list.includes(recipeName)) {
+                btn.classList.add('clicked');
                 btn.textContent = '♥'; // Filled heart
-                if (!list.includes(recipeName)) {
-                    list.push(recipeName);
-                }
             } else {
+                btn.classList.remove('clicked');
                 btn.textContent = '♡'; // Hollow heart
-                var index = list.indexOf(recipeName);
-                if (index > -1) {
-                    list.splice(index, 1);
-                }
             }
-            localStorage.setItem('liked', JSON.stringify(list));
+            btn.removeEventListener('click', toggleHeart); // Remove any old listeners to prevent duplicates
+            btn.addEventListener('click', toggleHeart); // Add new event listener
         });
-    });
+    }
+
+    // Toggle heart button state and update local storage
+    function toggleHeart() {
+        var btn = this;
+        var recipeName = btn.closest('.recipe-card').querySelector('h3').textContent;
+        btn.classList.toggle('clicked');
+        if (btn.classList.contains('clicked')) {
+            btn.textContent = '♥'; // Filled heart
+            if (!list.includes(recipeName)) {
+                list.push(recipeName);
+            }
+        } else {
+            btn.textContent = '♡'; // Hollow heart
+            var index = list.indexOf(recipeName);
+            if (index > -1) {
+                list.splice(index, 1);
+            }
+        }
+        localStorage.setItem('liked', JSON.stringify(list));
+    }
+
+    // Initialize heart buttons for any existing static cards
+    initializeHeartButtons();
 
     // Select filter elements (checkboxes and radio buttons)
     const vegetarianCheckbox = document.getElementById('vegetarian');
@@ -54,10 +59,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Fetch recipe data from a JSON file
     fetch('siteData/recipes.json')
-        .then((response) => response.json())
-        .then((data) => {
+        .then(response => response.json())
+        .then(data => {
             recipesData = data;
-
             // Add change event listeners to filter elements
             [vegetarianCheckbox, veganCheckbox, glutenFreeCheckbox, mildRadio, moderateRadio, spicyRadio, cheapRadio, affordableRadio, expensiveRadio].forEach(element => {
                 element.addEventListener('change', () => {
@@ -71,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
             });
         })
-        .catch((error) => {
+        .catch(error => {
             console.error('Error fetching recipe data:', error);
         });
 
@@ -93,6 +97,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 dynamicRecipesContainer.appendChild(recipeCard);
             }
         }
+        // Re-initialize heart buttons for dynamic recipe cards
+        initializeHeartButtons();
     }
 
     // Function to check if a recipe matches the selected filters
