@@ -31,19 +31,19 @@
         <section id="friendList"></section>
         <div id="friend1">
           <div style="position:relative; top:10px">
-            <img src="https://img.freepik.com/premium-photo/puppy-samoyed-dog_87557-14008.jpg" alt="Daniel pfp" width="100" height="75">
-            <div id="friendName" style = "position:relative; left:22px; top:-10px">Daniel</div>
-            <button style="font-family: 'Montserrat', sans-serif; font-size:10px; margin:20px;  position:relative; top:-30px" onclick="removeFriend('Daniel')">Remove Friend <i class="fa fa-trash-o"></i></button>
+            <img src="https://img.freepik.com/premium-photo/puppy-samoyed-dog_87557-14008.jpg" alt="Tomas pfp" width="100" height="75">
+            <div id="friendName" style = "position:relative; left:22px; top:-10px">Tomas</div>
+            <button style="font-family: 'Montserrat', sans-serif; font-size:10px; margin:20px;  position:relative; top:-30px" onclick="removeFriend('Tomas')">Remove Friend <i class="fa fa-trash-o"></i></button>
           </div>
           <div>
-            <p style="position:relative; top:-50px;">Bio: Hi my name is Daniel. I go to UIC and I love all types of foods. Since I love spicy food and don't have any dietary restriction I can eat anything!</p>
+            <p style="position:relative; top:-50px;">Bio: Hi my name is Tomas. I go to UIC and I love all types of foods. Since I love spicy food and don't have any dietary restriction I can eat anything!</p>
             <p style="position:relative; top:-40px;">My Recipes: Cilantro Lime Rice, Tonkotsu Ramen</p>
             <p style="position:relative; top:-30px;">My Food Recommendations: Hot Dog from Portillos, Tonkotsu Ramen from Taro Milk Tea, Butter Chicken from Curry on Fire</p>
           </div>
         </div>
         <div id="friend2">
           <div style="position:relative; top:10px">
-            <img src="https://i.pinimg.com/564x/0f/b9/f0/0fb9f0d29a9b43866cf7c2cc12b3fd3f.jpg" alt="Daniel pfp" width="100" height="75">
+            <img src="https://i.pinimg.com/564x/0f/b9/f0/0fb9f0d29a9b43866cf7c2cc12b3fd3f.jpg" alt="Drew pfp" width="100" height="75">
             <div id="friendName" style = "position:relative; left:26px; top:-10px">Drew</div>
             <button style="font-family: 'Montserrat', sans-serif; font-size:10px; margin:20px; position:relative; top:-30px" onclick="removeFriend('Drew')">Remove Friend <i class="fa fa-trash-o"></i></button>
           </div>
@@ -55,7 +55,7 @@
         </div>
         <div id="friend3">
           <div style="position:relative; top:10px">
-            <img src="https://cdn.thetealmango.com/wp-content/uploads/2021/07/ligh-and-book.jpg" alt="Daniel pfp" width="100" height="75">
+            <img src="https://cdn.thetealmango.com/wp-content/uploads/2021/07/ligh-and-book.jpg" alt="Teressa pfp" width="100" height="75">
             <div id="friendName" style = "position:relative; left:15px; top:-10px">Teressa</div>
             <button style="font-family: 'Montserrat', sans-serif; font-size:10px; margin:20px; position:relative; top:-30px" onclick="removeFriend('Teressa')">Remove Friend <i class="fa fa-trash-o"></i></button>
           </div>
@@ -94,11 +94,11 @@
       var inputValue = document.getElementById('username').value;
 
       // Check if the input value matches the desired word for each div, and if it does, show the div
-      if (inputValue === 'Daniel') {
+      if (inputValue === 'tomi22') {
         document.getElementById('friend1').style.display = 'inline-block';
-      } else if (inputValue === 'Drew') {
+      } else if (inputValue === 'ddog4') {
         document.getElementById('friend2').style.display = 'inline-block';
-      } else if (inputValue === 'Teressa') {
+      } else if (inputValue === 'tess36') {
         document.getElementById('friend3').style.display = 'inline-block';
       }
       // If the input value doesn't match any of the specified words, do nothing
@@ -106,7 +106,7 @@
 
     function removeFriend(divId) {
       // Hide the specified div
-      if (divId === 'Daniel') {
+      if (divId === 'Tomas') {
         document.getElementById('friend1').style.display = 'none';
       } else if (divId === 'Drew') {
         document.getElementById('friend2').style.display = 'none';
