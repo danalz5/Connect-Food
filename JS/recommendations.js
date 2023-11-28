@@ -14,7 +14,7 @@ fetch('../siteData/recommendations.json')
 
         // div to hold all the text
         const foodSection = document.createElement("div");
-        foodSection.id = "food"
+        foodSection.id = "food";
         //foodSection.style.display = "inline-block";
 
         const newDiv = document.createElement("div");
