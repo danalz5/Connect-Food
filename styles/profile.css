@@ -68,7 +68,7 @@ h1 {
     background-color: lightblue;
     align-items: center;
     text-align: center;
-    width: 60%;
+    width: 70%;
     border-radius: 2%;
     transition: transform 0.2s ease-in-out;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
@@ -118,6 +118,26 @@ h1 {
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
+#added {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+}
+
+#added button{
+    height: 50px;
+    width: 200px;
+    background-color: antiquewhite;
+    font-size: 15px;
+    transition: ease-in-out 0.3s;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+#added #rec-dropdown-content,
+#added #recipe-dropdown-content {
+    background-color: antiquewhite;
+}
+
 p {
     font-family: 'Montserrat', sans-serif;
 }
@@ -130,12 +150,16 @@ button {
     font-family: 'Montserrat', sans-serif;
 }
 
-.dropdown {
+.dropdown,
+#added .rec_dropdown,
+#added .recipe_dropdown {
     position: relative;
     display: inline-block;
 }
 
-.dropdown-content {
+.dropdown-content,
+#rec-dropdown-content,
+#recipe-dropdown-content {
     display: none;
     position: absolute;
     background-color: lightblue;
@@ -149,7 +173,9 @@ button {
     font-family: 'Montserrat', sans-serif;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content,
+#added .rec_dropdown:hover #rec-dropdown-content,
+#added .recipe_dropdown:hover #recipe-dropdown-content{
     display: block;
     opacity: 1;
 }
