@@ -45,8 +45,6 @@
             </button>
             <p id='errorMsg' style="display: None;">Please fill in all required fields</p>
             <script>
-              var listOfRecs = [];
-
               function submitRec() {
                 console.log("Entered Form")
 
@@ -56,6 +54,15 @@
 
                 if(val1.length > 0 && val2.length > 0 && val3.length > 0) {
                   var recommendation = [];
+
+                  var currList;
+                  var temp = localStorage.getItem('recommendation');
+                  if(temp != null) {
+                    currList = JSON.parse(temp);
+                  }
+                  else {
+                    currList = null;
+                  }
 
                   recommendation.push(document.getElementById('foodItem').value);
                   recommendation.push(document.getElementById('restaurant').value);
@@ -85,8 +92,16 @@
                   var foodList = document.getElementById('recList');
                   foodList.appendChild(foodSection);
 
-                  listOfRecs.push(recommendation);
-                  localStorage.setItem('recommendation', JSON.stringify(listOfRecs));
+                  var newList;
+                  if(currList != null) {
+                    newList = [currList[0], recommendation];
+                  }
+                  else {
+                    newList = [recommendation];
+                  }
+
+                  console.log(newList);
+                  localStorage.setItem('recommendation', JSON.stringify(newList));
                 }
                 else {
                   var form = document.getElementById('errorMsg');
@@ -97,6 +112,6 @@
           </div>
         </div>
     </main>
-	<script type="module" src="JS/recommendations.js"></script>
+  <script type="module" src="JS/recommendations.js"></script>
   </body>
 </html>
