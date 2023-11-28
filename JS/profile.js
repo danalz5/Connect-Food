@@ -2,10 +2,6 @@ window.onload = function () {
     loadSavedContent();
 };
 
-window.onbeforeunload = function () {
-    localStorage.removeItem('recommendation');
-}
-
 function disableEditing (editButton) {
     editButton.textContent = "Edit";
     var bio = document.getElementById('bioText');
@@ -54,11 +50,24 @@ function loadSavedContent() {
     }
 
     var recDropdown = document.getElementById('rec-dropdown-content');
-    var rec = document.createElement('label');
-    var recName = JSON.parse(localStorage.getItem('recommendation'))[0];
-    var recRest = JSON.parse(localStorage.getItem('recommendation'))[1];
-    rec.innerText = recName + ' from ' + recRest;
-    recDropdown.appendChild(rec);
+    if(localStorage.getItem('recommendation') != null){
+        var recs = JSON.parse(localStorage.getItem('recommendation'));
+        recs.forEach((rec) => {
+            var recLabel = document.createElement('label');
+            var recName = rec[0];
+            var recRest = rec[1];
+            recLabel.innerText = recName + ' from ' + recRest;
+            recDropdown.appendChild(recLabel);
+        });
+    }
+
+    var recipeDropdown = document.getElementById('recipe-dropdown-content');
+    var likedRecipes = JSON.parse(localStorage.getItem('liked'));
+    likedRecipes.forEach((recipe) => {
+        var rName = document.createElement('label');
+        rName.innerText = recipe;
+        recipeDropdown.appendChild(rName);
+    });
 }
 
 document.addEventListener("DOMContentLoaded", function () {

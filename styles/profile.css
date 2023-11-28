@@ -157,13 +157,25 @@ button {
     display: inline-block;
 }
 
+#recipe-dropdown-content label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+#rec-dropdown-content label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
 .dropdown-content,
 #rec-dropdown-content,
 #recipe-dropdown-content {
     display: none;
     position: absolute;
     background-color: lightblue;
-    min-width: 190px;
+    min-width: 250px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
     padding: 10px;
