@@ -2,6 +2,10 @@ window.onload = function () {
     loadSavedContent();
 };
 
+window.onbeforeunload = function () {
+    localStorage.removeItem('recommendation');
+}
+
 function disableEditing (editButton) {
     editButton.textContent = "Edit";
     var bio = document.getElementById('bioText');
@@ -48,6 +52,13 @@ function loadSavedContent() {
     if (username) {
         document.getElementById('username').innerText = username;
     }
+
+    var recDropdown = document.getElementById('rec-dropdown-content');
+    var rec = document.createElement('label');
+    var recName = JSON.parse(localStorage.getItem('recommendation'))[0];
+    var recRest = JSON.parse(localStorage.getItem('recommendation'))[1];
+    rec.innerText = recName + ' from ' + recRest;
+    recDropdown.appendChild(rec);
 }
 
 document.addEventListener("DOMContentLoaded", function () {

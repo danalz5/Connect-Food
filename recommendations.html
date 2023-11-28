@@ -45,6 +45,8 @@
             </button>
             <p id='errorMsg' style="display: None;">Please fill in all required fields</p>
             <script>
+              var listOfRecs = [];
+
               function submitRec() {
                 console.log("Entered Form")
 
@@ -59,8 +61,32 @@
                   recommendation.push(document.getElementById('restaurant').value);
                   recommendation.push(document.getElementById('review').value);
 
-                  console.log(recommendation)
-                  localStorage.setItem('recommendation', JSON.stringify(recommendation));
+                  console.log(recommendation);
+
+                  const foodSection = document.createElement("div");
+                  foodSection.id = "food";
+
+                  const para = document.createElement("h2");
+                  const node = document.createTextNode(`${document.getElementById('foodItem').value}`);
+                  para.appendChild(node);
+                  foodSection.appendChild(para);
+                  //para.style.display = "block";
+
+                  const para2 = document.createElement("p");
+                  const node2 = document.createTextNode(`Restaurant: ${document.getElementById('restaurant').value}`);
+                  para2.appendChild(node2);
+                  foodSection.appendChild(para2);
+
+                  const para3 = document.createElement("p");
+                  const node3 = document.createTextNode(`Your Review: ${document.getElementById('restaurant').value}`);
+                  para3.appendChild(node3);
+                  foodSection.appendChild(para3);
+
+                  var foodList = document.getElementById('recList');
+                  foodList.appendChild(foodSection);
+
+                  listOfRecs.push(recommendation);
+                  localStorage.setItem('recommendation', JSON.stringify(listOfRecs));
                 }
                 else {
                   var form = document.getElementById('errorMsg');

@@ -1,11 +1,14 @@
+/* Import Montserrat font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+/* Reset default margin, padding, and height for the body and HTML elements */
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
 }
 
+/* Apply the Montserrat font and set up the overall layout of the page */
 body {
     font-family: 'Montserrat', sans-serif;
     display: flex;
@@ -14,126 +17,86 @@ body {
     background-color: antiquewhite;
 }
 
+/* Style the container that holds the main content */
 .container {
     display: flex;
     width: 100%;
     height: 100%;
 }
 
+/* Style the sidebar and content sections */
 .sidebar, .content {
     display: flex;
     flex-direction: column;
 }
 
+/* Sidebar styles */
 .sidebar {
     width: 40%;
-    background-color: antiquewhite; /* Light blue background for the sidebar */
+    background-color: antiquewhite;
     align-items: center;
     justify-content: center;
     padding: 20px;
 }
 
+/* Style the sidebar image to fit within its container */
 .sidebar img {
     max-width: 100%;
     height: auto;
 }
 
+/* Content section styles */
 .content {
-    width: 60%; /* Content width */
-    background-color: antiquewhite; /* Light blue background for content */
-    overflow-y: auto; /* Makes the right-hand side scrollable vertically */
+    width: 60%;
+    background-color: antiquewhite;
+    overflow-y: auto;
 }
 
+/* Header styles (centered text with padding) */
 .header {
     text-align: center;
     padding: 20px;
 }
 
-.recipes {
+/* Style the filter and recipe section */
+.filter-and-recipes {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
 }
 
-.recipe-card {
-    position: relative; /* Added for absolute positioning of the heart button */
+/* Style the filter button */
+.filter-btn {
+    position: relative;
+    right: 340px;
+    padding: 10px 20px;
     background-color: lightblue;
-    border-radius: 10px;
-    margin: 10px 0;
-    width: 90%;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-}
-
-.recipe-card img {
-    width: 300px;
-    height: 300px;
-    border-radius: 5px;
-    object-fit: cover;
-    margin: 0 20px;
-}
-
-.recipe-details {
-    text-align: center;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 10px;
-}
-
-.recipe-card button {
-    margin-top: 10px;
-    padding: 5px 10px;
-    background-color: #e2b490;
-    border: none;
     border-radius: 5px;
     cursor: pointer;
-}
-
-.recipe-card button:hover {
-    background-color: #cba586;
-}
-
-/* Styles for heart button */
-.heart-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    font-size: 24px;
-    color: red;
-    padding: 0;
-    outline: none;
-}
-
-p {
+    font-size: 16px;
+    transition: background-color 0.2s, transform 0.2s;
     font-family: 'Montserrat', sans-serif;
+    z-index: 10;
+    font-weight: bold;
 }
 
-.buttons {
-    display: flex;
-    justify-content: center;
+/* Hover effect for the filter button */
+.filter-btn:hover {
+    transform: scale(1.05);
 }
 
-.buttons button {
-    margin: 5px;
-}
-
+/* Header styles (centered text with padding) */
 #head {
     margin-top: 1%;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 1%;
 }
 
-#head button{
+/* Style the navigation buttons in the header */
+#head button {
     width: 50px;
     height: 50px;
     background-color: lightblue;
@@ -145,16 +108,89 @@ p {
     font-family: 'Montserrat', sans-serif;
 }
 
-#head button:hover{
+/* Hover effect for the navigation buttons */
+#head button:hover {
     transform: scale(1.05);
 }
 
+/* Active state style for the navigation buttons */
 #head button:active {
     background-color: rgb(126, 185, 206);
 }
 
-#head #disabledButton{
+/* Style for a disabled button in the header */
+#head #disabledButton {
     background-color: antiquewhite;
     pointer-events: none;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Updated styles for recipe cards */
+.recipe-card {
+    position: relative;
+    background-color: lightblue;
+    border-radius: 10px;
+    margin: 10px 0;
+    width: 90%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the recipe card image with responsive sizing and border radius */
+.recipe-card img {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    object-fit: cover;
+    margin: 0 20px;
+}
+
+/* Style the recipe details section within the recipe card */
+.recipe-details {
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* Style the "View Recipe" button within the recipe card */
+.recipe-view-btn {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: antiquewhite;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #000;
+}
+
+/* Hover effect for the "View Recipe" button */
+.recipe-view-btn:hover {
+    background-color: antiquewhite;
+}
+
+/* Style the heart button within the recipe card */
+.heart-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: lightblue;
+    cursor: pointer;
+    font-size: 24px;
+    color: red;
+    border: none;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+}
+
+/* Style for the heart button when it is clicked (filled heart) */
+.heart-btn.clicked {
+    color: red;
 }

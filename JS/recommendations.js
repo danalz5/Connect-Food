@@ -14,7 +14,7 @@ fetch('../siteData/recommendations.json')
 
         // div to hold all the text
         const foodSection = document.createElement("div");
-        foodSection.id = "food"
+        foodSection.id = "food";
         //foodSection.style.display = "inline-block";
 
         const newDiv = document.createElement("div");
@@ -92,13 +92,41 @@ fetch('../siteData/recommendations.json')
       }
     }
 
+    loadStorage();
     filterFood();
   })
   .catch(error => {
     console.error('Error fetching or parsing JSON data:', error);
   });
 
-  
+  function loadStorage() {
+    var storedList = JSON.parse(localStorage.getItem('recommendation'));
+    console.log(storedList);
+
+    if(storedList != null) {
+      storedList.forEach(function(foodDetails) {
+        const newDiv = document.createElement("div");
+
+        const para = document.createElement("h2");
+        const node = document.createTextNode(`${foodDetails[0]}`);
+        para.appendChild(node);
+        newDiv.appendChild(para);
+
+        const para2 = document.createElement("p");
+        const node2 = document.createTextNode(`Restaurant: ${foodDetails[1]}`);
+        para2.appendChild(node2);
+        newDiv.appendChild(para2);
+
+        const para3 = document.createElement("p");
+        const node3 = document.createTextNode(`Your Review: ${foodDetails[2]}`);
+        para3.appendChild(node3);
+        newDiv.appendChild(para3);
+
+        newDiv.id = "food";
+        recList.appendChild(newDiv);
+      })
+    }
+  }
 
   function filterFood() {
     var mild = localStorage.getItem('mild');
