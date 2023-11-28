@@ -69,7 +69,7 @@ body {
 /* Style the filter button */
 .filter-btn {
     position: relative;
-    margin-right: 600px;
+    right: 340px;
     padding: 10px 20px;
     background-color: lightblue;
     border-radius: 5px;
@@ -193,20 +193,4 @@ body {
 /* Style for the heart button when it is clicked (filled heart) */
 .heart-btn.clicked {
     color: red;
-}
-
-/* Style for paragraphs with the Montserrat font */
-p {
-    font-family: 'Montserrat', sans-serif;
-}
-
-/* Style for a group of buttons */
-.buttons {
-    display: flex;
-    justify-content: center;
-}
-
-/* Style for individual buttons within the button group */
-.buttons button {
-    margin: 5px;
 }

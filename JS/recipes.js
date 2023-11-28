@@ -1,40 +1,40 @@
-// Wait for the DOM content to be fully loaded before executing the JavaScript code
+var list = JSON.parse(localStorage.getItem('liked')) || []; // Initialize the list from local storage or as an empty array
+
 document.addEventListener('DOMContentLoaded', function () {
     // Select all elements with class 'heart-btn' (heart buttons)
     var heartButtons = document.querySelectorAll('.heart-btn');
+
+    // Initialize button states based on local storage
+    heartButtons.forEach(function (btn) {
+        var recipeName = btn.closest('.recipe-card').querySelector('h3').textContent;
+        if (list.includes(recipeName)) {
+            btn.classList.add('clicked');
+            btn.textContent = '♥'; // Filled heart
+        }
+    });
 
     // Add a click event listener to each heart button
     heartButtons.forEach(function (btn) {
         btn.addEventListener('click', function () {
             // Toggle the 'clicked' class to change the heart icon
             btn.classList.toggle('clicked');
+            var recipeName = btn.closest('.recipe-card').querySelector('h3').textContent;
+
             if (btn.classList.contains('clicked')) {
                 btn.textContent = '♥'; // Filled heart
-                // Find the closest '.recipe-card' element and get its 'h3' content (recipe name)
-                var recipeName = btn.closest('.recipe-card').querySelector('h3').textContent;
-                // Store the recipe name using the storeRecipeName function
-                storeRecipeName(recipeName);
+                if (!list.includes(recipeName)) {
+                    list.push(recipeName);
+                }
             } else {
                 btn.textContent = '♡'; // Hollow heart
+                var index = list.indexOf(recipeName);
+                if (index > -1) {
+                    list.splice(index, 1);
+                }
             }
+            localStorage.setItem('liked', JSON.stringify(list));
         });
     });
-
-    // Function to store the recipe name in local storage
-    function storeRecipeName(recipeName) {
-        if (typeof Storage !== 'undefined') {
-            // Get existing saved recipe names from local storage or initialize as an empty array
-            var savedRecipeNames = JSON.parse(localStorage.getItem('recipeNames')) || [];
-            if (!savedRecipeNames.includes(recipeName)) {
-                // Add the recipe name to the array if it's not already included
-                savedRecipeNames.push(recipeName);
-                // Store the updated array in local storage
-                localStorage.setItem('recipeNames', JSON.stringify(savedRecipeNames));
-            }
-        } else {
-            alert('Local storage is not supported by your browser.');
-        }
-    }
 
     // Select filter elements (checkboxes and radio buttons)
     const vegetarianCheckbox = document.getElementById('vegetarian');
