@@ -1,0 +1,110 @@
+/* Reset default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: #fff;
+    color: #333;
+    line-height: 1.4;
+}
+
+.recipe-detail-container {
+    max-width: 768px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px;
+}
+
+/* Recipe image and title */
+#recipe-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#recipe-title {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #e67e22; /* Change color to match your exact design */
+}
+
+/* Rating stars - placeholder since the actual implementation may vary */
+.rating-stars {
+    color: #e67e22; /* Star rating color */
+    margin-bottom: 20px;
+}
+
+/* Recipe metadata */
+.recipe-metadata {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.recipe-metadata span {
+    display: block;
+    margin-bottom: 4px;
+}
+
+/* Section titles */
+h3 {
+    font-size: 1.2em;
+    color: #333;
+    border-bottom: 2px solid #e67e22; /* Match color to design */
+    padding-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Ingredients & Equipment list */
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+ul li {
+    background: #f9f9f9; /* Light grey background for each list item */
+    border-left: 4px solid #e67e22; /* Left border color */
+    padding: 10px;
+    margin-bottom: 8px;
+}
+
+/* Instructions ordered list */
+ol {
+    counter-reset: step-counter;
+    padding-left: 20px;
+}
+
+ol li {
+    margin-bottom: 15px;
+    padding-left: 10px;
+    text-indent: -10px;
+}
+
+ol li:before {
+    counter-increment: step-counter;
+    content: counter(step-counter) ". ";
+    font-weight: bold;
+}
+
+/* Notes */
+.notes {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Nutrition facts */
+.nutrition {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+/*Metadata */
+.author, .prep-time, .cook-time, .total-time {
+    font-weight: bold;
+}

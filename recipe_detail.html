@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Details</title>
+    <!--CSS file here -->
+     <link rel="stylesheet" href="./styles/recipe_detail.css">
+</head>
+<body>
+<div class="recipe-detail-container">
+    <h1 id="recipe-title">Recipe Title</h1>
+    <p id="recipe-description">Description</p>
+    <img id="recipe-image" src="" alt="Recipe Image" style="max-width: 100%; height: auto;">
+    <h3>Equipment Needed</h3>
+    <ul id="recipe-equipment"></ul>
+    <h3>Ingredients</h3>
+    <ul id="recipe-ingredients"></ul>
+    <h3>Preparation Steps</h3>
+    <ol id="recipe-steps"></ol>
+    <!-- Add more sections for nutrition, dietary restrictions, etc. -->
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const params = new URLSearchParams(window.location.search);
+        const recipeName = decodeURIComponent(params.get('recipe'));
+
+        fetch('siteData/recipes.json')
+            .then(response => response.json())
+            .then(data => {
+                const recipe = data[recipeName];
+                if (recipe) {
+                    document.getElementById('recipe-image').src = recipe.Image;
+                    document.getElementById('recipe-image').alt = recipeName + " Image";
+                    document.getElementById('recipe-title').textContent = recipeName;
+                    document.getElementById('recipe-description').textContent = recipe.Description;
+
+                    const equipmentList = document.getElementById('recipe-equipment');
+                    equipmentList.innerHTML = ''; // Clear existing list items
+                    recipe.Equipment.split('\n').forEach(item => {
+                        const li = document.createElement('li');
+                        li.textContent = item;
+                        equipmentList.appendChild(li);
+                    });
+
+                    const ingredientsList = document.getElementById('recipe-ingredients');
+                    ingredientsList.innerHTML = ''; // Clear existing list items
+                    recipe.Ingredients.split('\n').forEach(item => {
+                        const li = document.createElement('li');
+                        li.textContent = item;
+                        ingredientsList.appendChild(li);
+                    });
+
+                    const stepsList = document.getElementById('recipe-steps');
+                    stepsList.innerHTML = ''; // Clear existing list items
+                    recipe.Steps.split('\n').forEach(item => {
+                        const li = document.createElement('li');
+                        li.textContent = item;
+                        stepsList.appendChild(li);
+                    });
+
+                    // ...similar for other sections...
+                } else {
+                    document.getElementById('recipe-title').textContent = 'Recipe not found';
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching recipe data:', error);
+            });
+    });
+</script>
+</body>
+</html>
